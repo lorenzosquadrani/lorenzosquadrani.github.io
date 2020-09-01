@@ -1,3 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body  {
+  height:1200px;
   text-align: center;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #5D6063;
+}
+
+.page {
+  width: 900px;
+  margin: auto;
+  background-color: #bbc3d1;
+}
+
+.pagehead{
+  background-color: blue;
+  height: 150px;
+}
+
+.pagebody{
+  height: 400px;
+}
+
+.pagefoot{
+  background-color: blue;
+  height: 100px;
+}
+
+a:link,
+a:visited {
+  color: #5D6063;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+
+.menu {
+  position: fixed;
+  display: flex;
+  align-items:center;
+  top:50px;
+
+  padding: 10px 30px 10px 50px;
+  background: #D6E9FE;
+}
+
+.menu > ul {
+  display: flex;
+  height: 130px;
+  flex-direction:column;
+  justify-content: space-around;
 }
