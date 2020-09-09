@@ -6,7 +6,6 @@
 
 body  {
   height:1200px;
-  text-align: center;
   font-size: 18px;
   font-family: sans-serif;
   background-color: #eadeae;
@@ -16,6 +15,7 @@ body  {
   width: 900px;
   margin: auto;
   border-radius: 20px;
+  padding: 0px 40px;
   background-color: #F2EBCE;
 }
 
@@ -32,6 +32,14 @@ body  {
   height: 400px;
 }
 
+.pagebody > h3 {
+  margin:30px 0px 0px 0px;
+}
+
+.pagebody > ul{
+  margin-top: 10px;
+  margin-left: 20px;
+}
 
 
 
