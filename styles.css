@@ -22,11 +22,16 @@ body  {
 .pagehead{
   height: 150px;
   border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .pagebody{
   height: 400px;
 }
+
 
 
 
