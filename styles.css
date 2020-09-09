@@ -20,12 +20,17 @@ body  {
 }
 
 .pagehead{
-  height: 150px;
+  text-align: center;
   border-bottom: 2px solid black;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+}
+
+.pagehead > h1{
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+
+.pagehead > h2 {
+  padding-top:20px;
 }
 
 .pagebody{
