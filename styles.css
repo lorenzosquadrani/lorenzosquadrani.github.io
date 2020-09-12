@@ -13,15 +13,16 @@ body  {
 
 .page {
   width: 900px;
-  margin: auto;
+  margin:auto;
   border-radius: 20px;
-  padding: 0px 40px;
+  padding: 0px 40px 40px 40px;
   background-color: #F2EBCE;
 }
 
 .pagehead{
   text-align: center;
   border-bottom: 2px solid black;
+  margin-bottom: 20px;
 }
 
 .pagehead > h1{
