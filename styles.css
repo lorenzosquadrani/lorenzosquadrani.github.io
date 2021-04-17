@@ -19,20 +19,22 @@ body  {
   background-color: #F2EBCE;
 }
 
-.pagehead{
+.sectionhead{
   text-align: center;
   border-bottom: 2px solid black;
   margin-bottom: 20px;
 }
 
-.pagehead > h1{
+.sectionhead > h1{
   padding-top:20px;
   padding-bottom: 20px;
 }
 
-.pagehead > h2 {
+.sectionhead > h2 {
   padding-top:20px;
+  padding-bottom: 20px;
 }
+
 
 .pagebody{
   height: 400px;
@@ -47,20 +49,6 @@ body  {
   margin-left: 20px;
 }
 
-.sectionhead{
-  text-align: center;
-  border-bottom: 2px solid black;
-  margin-bottom: 20px;
-}
-
-.sectionhead > h1{
-  padding-top:20px;
-  padding-bottom: 20px;
-}
-
-.sectionhead > h2 {
-  padding-top:20px;
-}
 
 
 
