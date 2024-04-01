@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Lorenzo Squadrani / Personal Page"
+title                    : "Home"
 title_separator          : "-"
 name                     : &name "Lorenzo Squadrani"
 description              : &description "Ph.D. Student in Computational Neuroscience at the University of Bonn"
@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Lorenzo"
   pronouns         : # example: "she/her"  
-  bio              : "From Italy to Germany, from Physics to Neuroscience, powered by cereals."
+  bio              : "From Physics to Neuroscience, powered by cereals."
   location         : "Germany"
   employer         : "University Hospital of Bonn"
   uri              : # URL
