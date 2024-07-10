@@ -33,3 +33,14 @@ To track suspicious constructs in software written in a given computer language.
 Lintining highlights semantic and stylistic problems in your Python code.
 
 Usually, a linter performs a **static analysis**.
+
+## Python Packaging
+
+The following information is taken from the official Python Packaging User Guide (https://packaging.python.org/), in date 23 May 2024.
+
+There is more than one way to package a Python project.
+The most appropriate one depends on the target audience, environment in which the package will be used, and some charcteristics of the project itself.
+
+
+
+
