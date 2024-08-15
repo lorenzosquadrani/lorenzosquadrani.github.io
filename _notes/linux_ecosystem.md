@@ -70,6 +70,20 @@ Useful options:
 - `man` - show a page of the manual
 - `wmctrl` - interact with the window manager
 
+## Common Software
+
+### Archive Manager
+An archive is a collection of files.
+The files might be compressed.
+
+Most linux distributions come with CLI tools to manage archives.
+These usually are `tar`,`gzip`,`zip`,`unzip`.
+
+To unzip a file, simply use the command:
+```bash
+unzip file.zip
+```
+
 
 ## Linux Mint: my configuration
 
@@ -78,7 +92,6 @@ I use Linux Mint Cinnamon, version 21.3
 Kernel: Ubuntu (5.15.0-100-generic)
 Desktop Environment: Cinnamon
     Window Manager: Muffin
-
 
 ### Thunderbird
 I use thunderbird as email client and I want it to stay in the system tray. 
