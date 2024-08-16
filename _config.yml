@@ -198,19 +198,12 @@ kramdown:
 
 # Collections
 collections:
-  teaching:
+  notes:
     output: true
     permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
-
 
 # Defaults
 defaults:
@@ -232,42 +225,24 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
+  # _notes
   - scope:
       path: ""
-      type: teaching
+      type: notes
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       share: true
-      comments: true
+      comments: false
   # _publications
   - scope:
       path: ""
       type: publications
     values:
-      layout: single
+      layout: single # talk?
       author_profile: true
       share: true
       comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
-
 
 # Sass/SCSS
 sass:
