@@ -10,5 +10,5 @@
 - **Probability Measure**: a measure $\mathbb{P}$ on a measurable space $(\Omega, \mathcal{F})$ such that $\mathbb{P}(\Omega) = 1$.
 - **Probability Space**: a triple $(\Omega, \mathcal{F}, \mathbb{P})$ where $\Omega$ is a set, $\mathcal{F}$ is a $\sigma$-algebra on $\Omega$, and $\mathbb{P}$ is a probability measure on $(\Omega, \mathcal{F})$.
 - **Measurable Function** or **Random Variable**: Given a probability measure space $(\Omega, \mathcal{F}, \mathbb{P})$, a function $X: \Omega \rightarrow \mathbb{R}$ such that the pre-image of any real interval is a $\mathcal{F}$-measurable set.
-- **Indicator Function**: a function that takes the value 1 if the input is in a given set, and 0 otherwise; if the set is measurable, the indicator function is a measurable function.
+- **Characteristic Function** or *Indicator Function**: a function that takes the value 1 if the input is in a given set, and 0 otherwise; if the set is measurable, the indicator function is a measurable function.
 - **Lebesgue Measure**: given a measurable space $(\Omega, F )$, when $\Omega \subseteq \mathbb{R}^n$ the measure that it is usually defined is the Lebesgue measure, which is an extension of the definitions of length, area, and volume.
