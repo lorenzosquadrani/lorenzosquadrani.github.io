@@ -5,8 +5,6 @@ tag: linux
 permalink: /notes/linux/my_linux_distro_configuration
 ---
 
-# My Linux Distro Configuration
-
 ## Distro: Linux Mint
 
 When configuring a linux system, we need to know all the software and hardware specifications.
