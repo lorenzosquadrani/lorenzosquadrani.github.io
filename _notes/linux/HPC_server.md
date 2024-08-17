@@ -1,5 +1,12 @@
+---
+title: "High Performance Computing Servers"
+collection: notes
+tag: linux
+permalink: /notes/linux/HPC_server
+---
+
 ### Important Warning
-What follows is just bullshit. I have no idea what I am talking about. I am just trying to make sense of the things I have seen in the past. I am not an expert in HPC.
+What follows might be bullshit. I am just trying to make sense of the things from my experience and my readings, but I am not an expert in HPC.
 
 ### Use GPU on a server
 Note that if a server has GPU support, it does not mean that every nodes has a GPU.

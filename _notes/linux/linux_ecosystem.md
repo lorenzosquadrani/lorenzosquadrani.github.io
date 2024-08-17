@@ -1,3 +1,9 @@
+---
+title: "Linux Ecosystem"
+collection: notes
+tag: linux
+permalink: /notes/linux/linux_ecosystem
+---
 
 ## Linux Kernel
 The linux kernel is the core of the operating system.
@@ -83,21 +89,3 @@ To unzip a file, simply use the command:
 ```bash
 unzip file.zip
 ```
-
-
-## Linux Mint: my configuration
-
-I use Linux Mint Cinnamon, version 21.3
-
-Kernel: Ubuntu (5.15.0-100-generic)
-Desktop Environment: Cinnamon
-    Window Manager: Muffin
-
-### Thunderbird
-I use thunderbird as email client and I want it to stay in the system tray. 
-However, thunderbird does not have such feature (excluding some extensions that for me did not work).
-
-The solution for me was `kdocker`. 
-I made a shorcut to run the command `kdocker -q -t thunderbird`, and I set it to run at startup.
-
-I installed the extensions "Minimize on Close" by thunderbird, so that when I close it, it goes back to the tray (kdocker has the option iconify when minimized, but not iconify when closed, that's why we need to minimize thunderbird).
