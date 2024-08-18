@@ -42,4 +42,12 @@ th {
     </td>
     <td> 08-2024 </td>
   </tr>
+  <tr>
+    <td> Symbol </td>
+    <td> Stochastic Analysis for Finance </td>
+    <td> 
+      <a href="{% link _notes/stochastic_analysis_for_finance/probability_theory.md %}"> Probability Theory </a> <br> 
+    </td>
+    <td> 08-2024 </td>
+  </tr>
 </table>
