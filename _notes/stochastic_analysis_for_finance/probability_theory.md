@@ -18,7 +18,7 @@ permalink: /notes/stochastic_analysis_for_finance/probability_theory
 - **Characteristic Function** or **Indicator Function**: a function that takes the value 1 if the input is in a given set, and 0 otherwise; if the set is measurable, the indicator function is a measurable function.
 - **Lebesgue Measure**: given a measurable space $$(\Omega, F )$$, when $$\Omega \subseteq \mathbb{R}^n$$ the measure that it is usually defined is the Lebesgue measure, which is an extension of the definitions of length, area, and volume.
 
-## $$\sigma$$-algebra
+### $$\sigma$$-algebra
 Let $$\Omega$$ be a set. 
 A $$\sigma$$-algebra on $$\Omega$$ is any collection of its subsets $$\mathcal{F} \subseteq 2^{\Omega}$$ such that:
 - The empty set belongs to the $$\sigma$$-algebra, i.e. $$\emptyset \in \mathcal{F}$$.
@@ -28,20 +28,23 @@ A $$\sigma$$-algebra on $$\Omega$$ is any collection of its subsets $$\mathcal{F
 Other definitions are possible, but they all imply the same properties.
 In particular, from the given definition one can prove that: the set itself belongs to the $$\sigma$$-algebra; the $$\sigma$$-algebra is closed under countable intersections; the difference of two sets in the $$\sigma$$-algebra belongs to the $$\sigma$$-algebra.
 
-## Measurable Space
-A measurable space or sample space is a pair $$(\Omega, \mathcal{F})$$ where $$\Omega$$ is a set and $$\mathcal{F}$$ is a $$\sigma$$-algebra on $$\Omega$$.
+### Measurable Space
+A measurable space is a pair $$(\Omega, \mathcal{F})$$ where $$\Omega$$ is a set and $$\mathcal{F}$$ is a $$\sigma$$-algebra on $$\Omega$$.
 The elements of $$\mathcal{F}$$ are called measurable sets.
 
-## Probability Measure
-Let $$(\Omega, \mathcal{F})$$ be a sample space.
+### Probability Measure and Probability Space
+Let $$(\Omega, \mathcal{F})$$ be a measurable space.
 A probability measure is a function $$\mathbb{P}: \mathcal{F} \rightarrow [0, 1]$$ such that
+
 - $$\mathbb{P}(\emptyset) = 0$$
 - For any sequence of disjoint sets $$A_1, A_2, \ldots \in \mathcal{F}$$, $$\mathbb{P}(\cup_{i=1}^{\infty} A_i) = \sum_{i=1}^{\infty} \mathbb{P}(A_i)$$.
 - $$\mathbb{P}(\Omega) = 1$$.
 
+The triple $$(\Omega, \mathcal{F}, \mathbb{P})$$ is called a probability space.
+The set $$\Omega$$ is called the sample space, each element $$E \in \mathcal{F}$$ is called event, and its measure $$\mathbb{P}(E)$$ is called probability of the event $$E$$.
 
 ### Random Variable
-Let $$(\Omega, \mathcal{F})$$ be a sample space.
+Let $$(\Omega, \mathcal{F})$$ be a measurable space.
 A random variable is any real function $$X: \Omega \rightarrow \mathbb{R}$$, such that the pre-image of any real interval (or more generally, any Borel set) is a measurable set, i.e.
 
 $$
@@ -91,5 +94,20 @@ $$
 p(X\in [a,b]) = \mathbb{P}(X^{-1}([a, b])) = \mu_X([a,b]) = \int_a^b f_X(x) dx.
 $$
 
+### Cumulative Distribution Function
+Let $$X$$ be a random variable on the probability space $$(\Omega, \mathcal{F}, \mathbb{P})$$.
+The cumulative distribution function of $$X$$ is the function $$F_X: \mathbb{R} \rightarrow [0, 1]$$ defined by
+
+$$
+F(x) = \mathbb{P}(X \leq x) = \mu_X((-\infty, x]).
+$$
+
+Notice that, if a probability density function $$f_X$$ exists, it follows that
+$$
+F_X(x) = \int_{-\infty}^x f_X(t) dt.
+$$
+
+
+## Some Theorems
 
 
