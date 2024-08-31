@@ -51,4 +51,13 @@ th {
     </td>
     <td> 08-2024 </td>
   </tr>
+
+  <tr>
+    <td> Symbol </td>
+    <td> Neuroscience </td>
+    <td> 
+      <a href="{% link _notes/neuroscience/receptor_ligand_kinetics.md %}"> Receptor-Ligand Kinetics </a> <br> 
+    <td> 08-2024 </td>
+  </tr>
+
 </table>
