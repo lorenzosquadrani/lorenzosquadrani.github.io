@@ -1,3 +1,9 @@
+---
+title: "Receptor-Ligand Kinetics"
+collection: notes
+tag: Neuroscience
+permalink: /notes/neuroscience/receptor_ligand_kinetics
+---
 
 The receptor-ligand kinetics is typically described by the chemical reaction:
 

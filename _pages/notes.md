@@ -3,20 +3,18 @@ layout: splash
 permalink: /notes/
 title: "Personal Notes"
 author_profile: false
-redirect_from:
-  - /wordpress/blog-posts/
 ---
 
 {% include base_path %}
 
 <head>
 <style>
-th {
-  border: 1px solid black;
-  text-align: left;
-  padding: 8px;
-  background-color: #f2f2f2;
-}
+  th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+    background-color: #f2f2f2;
+  }
 </style>
 </head>
 
@@ -24,13 +22,11 @@ th {
   <tr>
     <th colspan="2"> Category </th>
     <th> Topics </th>
-    <th> Last updated </th>
   </tr>
   <tr>
     <td> Symbol </td>
     <td> Python Programming  </td>
     <td> Multiprocessing <br> Best practices  </td>
-    <td> 08-2024 </td>
   </tr>
   <tr>
     <td> Symbol </td>
@@ -40,7 +36,6 @@ th {
       <a href="{% link _notes/linux/my_distro_configuration.md %}"> My Distro Configuration </a> <br> 
       <a href="{% link _notes/linux/HPC_server.md %}"> High Performance Computing Servers </a> <br>  
     </td>
-    <td> 08-2024 </td>
   </tr>
   <tr>
     <td> Symbol </td>
@@ -48,16 +43,28 @@ th {
     <td> 
       <a href="{% link _notes/stochastic_analysis_for_finance/probability_theory.md %}"> Probability Theory </a> <br> 
       <a href="{% link _notes/stochastic_analysis_for_finance/stochastic_processes.md %}"> Stochastic Processes </a> <br> 
+      <a href="{% link _notes/stochastic_analysis_for_finance/ito_calculus.md %}"> Ito Calculus </a> <br>
     </td>
-    <td> 08-2024 </td>
   </tr>
-
   <tr>
     <td> Symbol </td>
     <td> Neuroscience </td>
     <td> 
-      <a href="{% link _notes/neuroscience/receptor_ligand_kinetics.md %}"> Receptor-Ligand Kinetics </a> <br> 
-    <td> 08-2024 </td>
+      <a href="{% link _notes/neuroscience/receptor_ligand_kinetics.md %}"> Receptor-Ligand Kinetics </a> 
+    </td>
   </tr>
-
+  <tr>
+    <td> Symbol </td>
+    <td> Health </td>
+    <td> 
+      <a href="{%link _notes/health/my_hearing_tests.md %}"> My Hearing Tests </a> <br>
+    </td>
+  </tr>
+  <tr>
+    <td> Symbol </td>
+    <td> Random Stuff </td>
+    <td> 
+      <a href="{% link _notes/random/bike_valves.md %}"> Bike Valves </a> <br>
+    </td>
+  </tr>
 </table>

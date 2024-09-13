@@ -7,7 +7,7 @@ permalink: /notes/stochastic_analysis_for_finance/probability_theory
 
 ## Some definitions
 
-### $$\sigma$$-algebra
+### $$\sigma$$-algebra and Measurable Space
 Let $$\Omega$$ be a set. 
 A $$\sigma$$-algebra on $$\Omega$$ is any collection of its subsets $$\mathcal{F} \subseteq 2^{\Omega}$$ such that:
 - The empty set belongs to the $$\sigma$$-algebra, i.e. $$\emptyset \in \mathcal{F}$$.
@@ -17,9 +17,7 @@ A $$\sigma$$-algebra on $$\Omega$$ is any collection of its subsets $$\mathcal{F
 Other definitions are possible, but they all imply the same properties.
 In particular, from the given definition one can prove that: the set itself belongs to the $$\sigma$$-algebra; the $$\sigma$$-algebra is closed under countable intersections; the difference of two sets in the $$\sigma$$-algebra belongs to the $$\sigma$$-algebra.
 
-### Measurable Space
-A measurable space is a pair $$(\Omega, \mathcal{F})$$ where $$\Omega$$ is a set and $$\mathcal{F}$$ is a $$\sigma$$-algebra on $$\Omega$$.
-The elements of $$\mathcal{F}$$ are called measurable sets.
+We say that the couple $$(\Omega, \mathcal{F})$$ is a measurable space and the elements of $$\mathcal{F}$$ are measurable sets.
 
 ### Probability Measure and Probability Space
 Let $$(\Omega, \mathcal{F})$$ be a measurable space.
@@ -29,11 +27,11 @@ A probability measure is a function $$\mathbb{P}: \mathcal{F} \rightarrow [0, 1]
 - For any sequence of disjoint sets $$A_1, A_2, \ldots \in \mathcal{F}$$, $$\mathbb{P}(\cup_{i=1}^{\infty} A_i) = \sum_{i=1}^{\infty} \mathbb{P}(A_i)$$.
 - $$\mathbb{P}(\Omega) = 1$$.
 
-The triple $$(\Omega, \mathcal{F}, \mathbb{P})$$ is called a probability space.
+We say that the triplet $$(\Omega, \mathcal{F}, \mathbb{P})$$ is a probability space.
 The set $$\Omega$$ is called the sample space, each element $$E \in \mathcal{F}$$ is called event, and its measure $$\mathbb{P}(E)$$ is called probability of the event $$E$$.
 
 ### Random Variable
-Let $$(\Omega, \mathcal{F})$$ be a measurable space.
+Let $$(\Omega, \mathcal{F}, \mathbb{P})$$ be a probability space.
 A random variable is any real function $$X: \Omega \rightarrow \mathbb{R}$$, such that the pre-image of any real interval (or more generally, any Borel set) is a measurable set, i.e.
 
 $$
@@ -115,7 +113,7 @@ Let $$(\Omega, \mathbb{F}, \mathbb{P})$$ be a probability space.
 Given two events $$A, B \in \mathbb{F}$$, we define the conditional probability of $$B$$ given $$A$$ as:
 
 $$
-P(B | A) = \frac{P(A\intersect B)}{P(A)}
+P(B | A) = \frac{P(A \cap B)}{P(A)}
 $$
 
 ### Conditional Expectation of a random variable with respect to an event
@@ -128,6 +126,41 @@ $$
 
 Notice that this could be considered the expectation value of a new random variable $$X|A$$ defined on the probability space $$(A, \mathbb{F}_A, \frac{\mathbb{P}}{\mathbb{P}(A)})$$, where $$\mathbb{A}$$ is an appropriate restriction of $$\mathbb{F}$$.
 The restriction of the sample space to $$A$$ and of the $$\sigma$$-algebra to subsets of $$A$$ ensures that $$\frac{\mathbb{P}}{\mathbb{P}(A)}$$ is a probability measure.
+
+### Conditional Expectation of a random variable with respect to a $$\sigma$$-algebra
+Let $$(\Omega, \mathbb{F}, \mathbb{P})$$ be a probability space.
+Let $$\mathbb{G} \subset \mathbb{F}$$ be a sub-$$\sigma$$-algebra of $$\mathbb{F}$$.
+If $$X$$ is an $$\mathbb{F}$$-measurable random variable, there exists a unique $$\mathbb{G}$$-measurable random variable $$Y$$ such that:
+
+$$
+E[Y | A] = E[X | A] \quad \forall A \in \mathbb{G}.
+$$
+
+We call $$Y$$ the conditional expectation of $$X$$ given $$\mathbb{G}$$, and we denote it as $$E[X | \mathbb{G}]$$.
+Notice that the conditional expectation of a random variable with respect to a $$\sigma$$-algebra is a random variable itself.
+We can consider it a "restricted" version of the original random variable, which is adapted to the information contained in the sub-$$\sigma$$-algebra $$\mathbb{G}$$.
+This definiton is the natural extension of the conditional expectation of a random variable with respect to an event (indeed a sub-$$\sigma$$-algebra is a collection of events).
+First, we defined the conditional expectation of a random variable with respect to an event as a number (the expectation value of the random variable on the event).
+This number contains all the information about the random variable that is relevant to the event.
+And this is only a number! 
+Indeed, a specific event is the most restricting piece of information that we can have about a random variable.
+A progressively less restricting piece of information is a collection of events, i.e. a $$\sigma$$-algebra.
+In this case, the piece of information does not restrict the random variable to a single number, but to a random variable itself, measurable on the restricted $$\sigma$$-algebra.
+The restriction is again named "conditional expectation", and it is realized by applying the expectation value to the random variable on each element of the $$\sigma$$-algebra.
+As the conditional expectation of random variable with respect to an event is number, the conditional expectation of a random variable with respect to a $$\sigma$$-algebra is a collection of numbers, one for each element in the $$\sigma$$-algebra.
+
+### Conditional Expectation of a random variable with respect to a random variable
+Let $$(\Omega, \mathbb{F}, \mathbb{P})$$ be a probability space.
+Let $$X, Y$$ be two $$\mathbb{F}$$-measurable random variables.
+The conditional expectation of $$X$$ given $$Y$$, denoted as $$E[X | Y]$$, is the conditional expectation of $$X$$ with respect to the $$\sigma$$-algebra generated by $$Y$$, i.e.: 
+
+$$
+E[X|Y] = E[X | \sigma(Y)].
+$$
+
+Thus, the conditional expectation of a $$X$$ with respect to $$Y$$ is the a measurable function that to each possible event of $$\sigma(Y)$$ assigns the expectation value of $$X$$ on that event.
+Again, we are restricting the random variable $$X$$ by restricting the underlying $$\sigma$$-algebra to the one generated by $$Y$$, which represents the information contained in $$Y$$.
+
 
 
 

@@ -8,11 +8,12 @@ For example the [superhearo](https://github.com/lorenzosquadrani/superhearo) rep
 To include the repository in my website repository as a submodule, I run the following command:
 
 ```bash
-git submodule add /other_repositories/https://github.com/lorenzosquadrani/superhearo
+git submodule add https://github.com/lorenzosquadrani/superhearo
 ```
 
 This adds two "changes to be commited":
-- a `.gitmodules` file in which the mapping local path - remote repository for all your submodules will be stored
-- a new directory in your repository, named after the path you are including as a submodule, containing the content of the repository
+- a `.gitmodules` file in which the mapping local path - remote repository for all your submodules will be stored;
+- a new directory in your repository, named after the path you are including as a submodule, containing the content of the repository; the directory is created in the same location where you run the command.
+
 
 
