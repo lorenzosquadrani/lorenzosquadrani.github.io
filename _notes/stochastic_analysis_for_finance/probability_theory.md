@@ -143,7 +143,7 @@ This definiton is the natural extension of the conditional expectation of a rand
 First, we defined the conditional expectation of a random variable with respect to an event as a number (the expectation value of the random variable on the event).
 This number contains all the information about the random variable that is relevant to the event.
 And this is only a number! 
-Indeed, a specific event is the most restricting piece of information that we can have about a random variable.
+Indeed, a specific event is the most restricting piece of information that we can have about a random variable (excluding knowing a specific sample, which I am not sure it makes sense).
 A progressively less restricting piece of information is a collection of events, i.e. a $$\sigma$$-algebra.
 In this case, the piece of information does not restrict the random variable to a single number, but to a random variable itself, measurable on the restricted $$\sigma$$-algebra.
 The restriction is again named "conditional expectation", and it is realized by applying the expectation value to the random variable on each element of the $$\sigma$$-algebra.

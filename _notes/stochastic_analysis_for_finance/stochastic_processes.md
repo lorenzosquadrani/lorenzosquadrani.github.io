@@ -44,3 +44,16 @@ We say that $$W_t$$ is a Brownian motion if:
 - For $$0 \leq t_1 < t_2 < \ldots < t_n$$, the increments $$W_{t_2} - W_{t_1}, W_{t_3} - W_{t_2}, \ldots, W_{t_n} - W_{t_{n-1}}$$ are independent.
 
 
+## Martingales
+
+### Definition
+Let $$\{ X_t \}_{t \in I}$$ be a stochastic process adapted to the filtration $$\{ \mathcal{F}_t \}_{t \in I}$$.
+Let the random variable $$X_t$$ be integrable for any $$t \in I$$, i.e. $$\mathbb{E}[|X_t|] < \infty$$.
+We say that $$\{ X_t \}_{t \in I}$$ is a martingale with respect to the filtration $$\{ \mathcal{F}_t \}_{t \in I}$$ if:
+
+$$
+\mathbb{E}[X_t | \mathcal{F}_s] = X_s$$ for any $$s \leq t
+$$.
+
+
+

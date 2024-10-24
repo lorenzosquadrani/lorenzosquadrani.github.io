@@ -5,7 +5,7 @@ tag: Stochastic Analysis for Finance
 permalink: /notes/stochastic_analysis_for_finance/ito_calculus
 ---
 
-Here we denote a stochastic process as $$f(t, \omega), $$f: I \times \Omega \longrightarrow \mathbb{R}$$.
+Here we denote a stochastic process as $$f(t, \omega)$$, $$f: I \times \Omega \longrightarrow \mathbb{R}$$.
 
 ### Ito Integral
 
@@ -18,7 +18,7 @@ $$
 
 where $$0=t_0 < t_1 < \ldots < t_n = t$$ is a partition of the interval $$[0, t]$$.
 
-Note that the limit is defined in a probabilistic sense
+Note that the limit is defined in a probabilistic sense.
 
 ### Stochastic Differential Equation
 
