@@ -44,6 +44,7 @@ author_profile: false
       <a href="{% link _notes/stochastic_analysis_for_finance/probability_theory.md %}"> Probability Theory </a> <br> 
       <a href="{% link _notes/stochastic_analysis_for_finance/stochastic_processes.md %}"> Stochastic Processes </a> <br> 
       <a href="{% link _notes/stochastic_analysis_for_finance/ito_calculus.md %}"> Ito Calculus </a> <br>
+      <A href="{%link _notes/signal_processing/time_series_analysis.md %}"> Time Series Analysis </a> <br> 
     </td>
   </tr>
   <tr>
