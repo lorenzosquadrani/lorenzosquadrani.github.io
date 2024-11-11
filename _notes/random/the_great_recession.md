@@ -1,5 +1,6 @@
 ## The Great Recession
 
+*These are notes from the video [https://www.youtube.com/watch?v=2TuJkp1z8PM]*
 
 The 9th August 2007, the French bank BNP Paribas announced that it was suspending the calculation of the Net Asset Value (NAV) of three of its funds, because "the complete evaporation of liquidity in certain market segments of the US securitisation market has made it impossible to value certain assets fairly regardless of their quality or credit rating".
 Which is just a fancy way to say: "if an investor would like to get his money back, we cannot pay".
@@ -54,4 +55,12 @@ The traders receive a certain salary, plus bonuses dependent on how much they ma
 The traders were used to make the bank earn with the obligations from the state, but the interested rates were going down a lot, so they were incentivated to take big risks with the derivatives.
 
 The majority of economists agree that the credit crunch resulted from 4 factors:
-- The liquidity arriving from China. China exported more than it imported. Let us say that US purchased 100 from China, while China purchased only 80. Then US had to give 20 liquidity to China. The central bank of China was investing that money in US obligations, which had a good return. But if China buys a lot of such obligations, their price goes up, and so the return goes down. Damn it, the US obligations were the classic way for banks' traders to make profit and earn their bonus. 
+- The liquidity arriving from China. China exported more than it imported. Let us say that US purchased 100 from China, while China purchased only 80. Then US had to give 20 liquidity to China. The central bank of China was investing that money in US obligations, which had a good return. But if China buys a lot of such obligations, their price goes up, and so the return goes down. Damn it, the US obligations were the classic way for banks' traders to make profit and earn their bonus. They were used to 7% return, but now it gets down a to 6, 5, 4, ecc.
+- The Expansionary Monetary Policy in the US from 2000 to 2006. In the 2000 there was the crisis of "dot coms". Apart from families, the investors invest in the following way: they go to the bank, they say buy 100k of these, but I do not have the money, the bank says give me 10k of loss margin (this investment is called "at margin"), and so it goes. If the investment goes down close to 90k, the bank calls the investor and says it will sell unless he gives some more margin. To avoid losses the investor might sell. To avoid massive disinvestement when the internet bubble crashes, the US central bank cut the discount rate. In this case, the bank can lend some low-interests money to the investor, to put back his margin instead of selling. Come on!
+So you will see in the early 2000 a sharp decrease of the federal discount rate.
+Then in 2001 there is the twin towers thing, everybody is scared, and when people is scare wants to sell and put liquidity under the bed. To avoid this, the president of US central bank shuts down the market for three days! And, of course, the discount rate is cut again.
+The important concept here is that the cut of discount rate slows down the selling of the marginal investors during crisis, like the crisis of dotcoms, the twin towers.
+The concept of low discount rate is also connected to the increase of "domanda aggregata". The first thing that families buy when there is "easy money" to borrow, is houses of course.
+Here comes the bubble of the houses.
+And of course, as we are repeating for a while now, the other effect of low discount rate is that the bank investors cannot use country titles to earn their bonuses, so they buy more derivatives.
+- In 1999, the distinction between commercial and investment banks is abolished.

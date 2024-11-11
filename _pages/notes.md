@@ -39,19 +39,20 @@ author_profile: false
   </tr>
   <tr>
     <td> Symbol </td>
-    <td> Stochastic Analysis for Finance </td>
+    <td> Stochastic Analysis </td>
     <td> 
-      <a href="{% link _notes/stochastic_analysis_for_finance/probability_theory.md %}"> Probability Theory </a> <br> 
-      <a href="{% link _notes/stochastic_analysis_for_finance/stochastic_processes.md %}"> Stochastic Processes </a> <br> 
-      <a href="{% link _notes/stochastic_analysis_for_finance/ito_calculus.md %}"> Ito Calculus </a> <br>
-      <A href="{%link _notes/signal_processing/time_series_analysis.md %}"> Time Series Analysis </a> <br> 
+      <a href="{% link _notes/stochastic_analysis/probability_theory.md %}"> Probability Theory </a> <br> 
+      <a href="{% link _notes/stochastic_analysis/stochastic_processes.md %}"> Stochastic Processes </a> <br> 
+      <a href="{% link _notes/stochastic_analysis/ito_calculus.md %}"> Ito Calculus </a> <br>
+      <a href="{%link _notes/signal_processing/time_series_analysis.md %}"> Time Series Analysis </a> <br> 
     </td>
   </tr>
   <tr>
     <td> Symbol </td>
     <td> Neuroscience </td>
     <td> 
-      <a href="{% link _notes/neuroscience/receptor_ligand_kinetics.md %}"> Receptor-Ligand Kinetics </a> 
+      <a href="{% link _notes/neuroscience/receptor_ligand_kinetics.md %}"> Receptor-Ligand Kinetics </a> <br>
+      <a href="{% link _notes/neuroscience/spike_train_autocorrelation.md %}"> Autocorrelation for Spike Trains </a> 
     </td>
   </tr>
   <tr>

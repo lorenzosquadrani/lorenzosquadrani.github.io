@@ -55,5 +55,11 @@ $$
 \mathbb{E}[X_t | \mathcal{F}_s] = X_s$$ for any $$s \leq t
 $$.
 
+### Poisson Process
 
+TODO: from source https://gtribello.github.io/mathNET/resources/jim-chap20.pdf
+
+The spiking times are independent on one another, and the "number of firing times in time intervals of the same length" follows a Poisson distribution with a fixed rate $$\nu$$.
+We know that in this case, the probability density function of the ISI (inter-spike interval) is an exponential function.
+In general, when the Poisson process does not represent a spike train, the time between to successive events is called *interarrival time* or *waiting time*.
 
