@@ -117,3 +117,16 @@ It includes:
 - tests for stationarity
 - autocorrelation plots
 - forecasting with autoregressive models
+
+
+# ARMA processes
+An important family of parametric stationary time series is formed by the **autoregressive moving average** (ARMA) processes.
+Under some conditions, they can be used to approximate stationary process with a given autocovariance function.
+
+We say that a random process $$\{X_t\}$$ is an ARMA process if it is stationary and if, for each $$t$$:
+
+$$
+X_t - \phi_1 X_{t-1} - ... - \phi_p X_{t-p} = Z_t + \theta_1 Z_{t-1} + ... + \theta_q Z_{t-q}
+$$
+
+where 

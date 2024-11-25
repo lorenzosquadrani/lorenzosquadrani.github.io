@@ -174,6 +174,13 @@ $$
 \lim_{n \rightarrow \infty} \mathbb{P}\left(\left|\frac{S_n}{n} - \mu \right| > \epsilon \right) = 0 \quad \text{for any } \epsilon > 0.
 $$
 
+## Discrete Random Variables
+
+Most of the definitions given above can be naturally adapted to the discrete case.
+In particular, the definition of probability space needs no adaptation.
+The definition of discrete random variable is achieved by substituting the codomain $$\mathbb{R}$$ with a discrete set like $$\mathbb{N}$$.
+The definition of distribution function is achieved by substituting the integration with a summation.
+
 
 
 

@@ -56,10 +56,19 @@ $$
 The process is called "renewal" because of the fundamental assumption that the event probability does not depend on the events preceding the last event (i.e. the last event completely "renews" the probability).
 The time since last spike $$t-\hat t$$ is also called *age* of the system.
 
+In the case of a stationary renewal process, it is:
 
+$$
+\rho = \rho(t-\hat t)
+$$
 
+Of course, unlike in a Poisson process, in a renewall process subsequent events are not independent.
+However, due to the renewal assumption which restricts the dependence on the most recent event, the *intervals between subsequent events* are independent.
+Thanks to this, it is possible to compute the probability density of the intervals, or equivalently the probability density that an event occurs at time $$t=\hat t + \Delta t $$ given that an event occured at time $$\hat t$$:
 
-
+$$
+P_0(\Delta t) = P(\hat t + \Delta t | \hat t) = P(t | \hat t)
+$$
 
 
 ## Autocorrelation Function and Power Spectrum
