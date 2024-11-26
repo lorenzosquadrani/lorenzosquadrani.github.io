@@ -53,7 +53,8 @@ author_profile: false
     <td> 
       <a href="{% link _notes/neuroscience/receptor_ligand_kinetics.md %}"> Receptor-Ligand Kinetics </a> <br>
       <a href="{% link _notes/neuroscience/spike_train_autocorrelation.md %}"> Autocorrelation for Spike Trains </a>  <br>
-      <a href="{% link _notes/signal_processing/Volterra_series.md %}"> Volterra series </a> 
+      <a href="{% link _notes/signal_processing/Volterra_series.md %}"> Volterra series </a> <br>
+      <a href="{% link _notes/neuroscience/STDP_models.md %}"> STDP Models </a> 
     </td>
   </tr>
   <tr>

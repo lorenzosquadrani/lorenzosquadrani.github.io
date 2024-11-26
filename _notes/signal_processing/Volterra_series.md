@@ -103,7 +103,25 @@ $$
 y(t) = h_0 + \int_{-\infty}^{\infty} h_1(\tau) x(t - \tau) d\tau + \iint_{-\infty}^{\infty} h_2(\tau_1, \tau_2) x(t - \tau_1) x(t - \tau_2) d\tau_1 d\tau_2 + ...
 $$
 
-Notice the analogy with the Taylor series.
+where $$h_n(\tau_1, ..., \tau_n)$$ are the called Volterra kernels.
+Notice that the kernels of order higher than 1 are no completely defined by the response to a unit impulse.
+Just do the calculations to verify that. 
+You will find that the response to a unit impulse is sufficient only to determine the diagonal of the kernels.
+
+A more compact notation is:
+
+$$
+y(t) = h_0 + H_1[x] + H_2[x] + ...
+$$
+
+Maybe I should tell more about the analogy with the Taylor series. Maybe.
+
+
+
+First-order Volterra system
+---------------------------
+
+Let us con
 
 
 
