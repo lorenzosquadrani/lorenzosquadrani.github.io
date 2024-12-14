@@ -183,4 +183,18 @@ The definition of distribution function is achieved by substituting the integrat
 
 
 
+## Special Distributions
+
+### Poisson Distribution
+This is a probability distribution for a discrete random variable $$N$$ (Poisson random variable) defined by:
+
+$$
+P(N=n) = \frac{\lambda^n}{n!} e^{-\lambda}
+$$
+
+where \lambda is called rate parameter.
+
+The random variable $$N$$ represents the number of events in fixed interval of time (or space, or anything else), given a mean number of events $$\lambda$$.
+
+
 
