@@ -64,7 +64,7 @@ For the Gerstner, this is just a formal representation of the point process.
 For the Gardiner, this is the formal derivative of the Poisson counting process:
 
 $$
-y(t)= dN(t)/dt = \lim_{\Delta t \rightarrow 0} \frac{N(t+\Delta t) - N(t)}{\Delta t}
+y(t)= \frac{dN(t)}{dt} = \lim_{\Delta t \rightarrow 0} \frac{N(t+\Delta t) - N(t)}{\Delta t}
 $$
 
 This means that $$y(t)$$ is zero everywhere except at the spike times, where it is infinite, exactly like the delta function.
@@ -85,7 +85,7 @@ $$
 where $$P_F(t; t+\Delta t)$$ is the probability of finding a spike in the interval $$[t, t+\Delta t]$$.
 Not sure why, but I feel this definition might become useful in the future.
 
-### Expectation, Variance, Autocorrelation for the counting process
+### Statistics for the counting process
 
 Since for the counting process we know the time-dependent probability distribution, we can compute all the statistical quantities we are interested in.
 
@@ -113,7 +113,7 @@ C(t_1, t_2) &= \mathbb{E}[N(t_1)N(t_2)] = \\
 \end{aligned}
 $$
 
-### Expectation, Variance, Autocorrelatio for the derivative of the counting process (spike train)
+### Statistics for the derivative of the counting process (spike train)
 
 Let $$y(t) = \sum_n \delta(t-t_n) = dN(t)/dt$$ describe a spiking process.
 Through the definition we can compute the relevant statistical quantities.
@@ -125,8 +125,8 @@ $$
 \langle y(t) \rangle &= \left \langle \lim_{\Delta t \rightarrow 0} \frac{N(t+\Delta t) - N(t)}{\Delta t} \right \rangle \\
                     &= \lim_{\Delta t \rightarrow 0} \frac{\langle N(t+\Delta t) - N(t) \rangle}{\Delta t} \\
                     &= \lim_{\Delta t \rightarrow 0} \frac{\langle N(t+\Delta t) \rangle - \langle N(t) \rangle}{\Delta t} \\
-                    &= \lim_{\Delta t \rightarrow 0} \frac{\nu (t+\Delta t) - \nu t}{\Delta t} \\
-                    &= \nu
+                    &= \lim_{\Delta t \rightarrow 0} \frac{\lambda (t+\Delta t) - \lambda t}{\Delta t} \\
+                    &= \lambda
 \end{aligned}
 $$
 
@@ -134,7 +134,7 @@ The variance is:
 
 $$
 \begin{aligned}
-\langle y(t)^2 \rangle &= \langle \lim_{\Delta t \rightarrow 0} \frac{N(t+\Delta t) - N(t)}{\Delta t} \lim_{\Delta t \rightarrow 0} \frac{N(t+\Delta t) - N(t)}{\Delta t} \rangle \\
+\langle y(t)^2 \rangle &= \left \langle \lim_{\Delta t \rightarrow 0} \frac{N(t+\Delta t) - N(t)}{\Delta t} \lim_{\Delta t \rightarrow 0} \frac{N(t+\Delta t) - N(t)}{\Delta t} \right \rangle \\
                     &= \lim_{\Delta t \rightarrow 0} \left( \lambda^2 + \frac{\lambda}{\Delta t}\right)   \\
                     &= \lambda^2 + \lambda \delta(0)
 \end{aligned}
@@ -146,7 +146,7 @@ $$
 \begin{aligned}
 C(s) &= \langle y(t) y(t+s) \rangle \\
      &= \left \langle \lim_{\Delta t \rightarrow 0} \frac{N(t+\Delta t) - N(t)}{\Delta t} \lim_{\Delta t \rightarrow 0} \frac{N(t+s+\Delta t) - N(t+s)}{\Delta t} \right \rangle \\
-    &= \nu^2
+    &= \lambda^2
 \end{aligned}
 $$
 

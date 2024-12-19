@@ -231,8 +231,6 @@ R_{XX}(t_1, t_2)&= \mathbb{E}[X(t_1)X(t_2)] = E[N(0, t_1)N(0, t_2)] = \\
 \end{aligned}
 $$
 
-Notice that we do not treat the case $$t_1 = t_2$$.
-
 ### Autocorrelation function 2
 
 Let us compute the autocorrelation function for the the Poisson process $$X(t)$$ for two times $$t_1$$ and $$t_2$$, with $$t_1 + \Delta t< t_2$$:
