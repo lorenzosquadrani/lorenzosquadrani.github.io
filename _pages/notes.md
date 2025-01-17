@@ -25,11 +25,6 @@ author_profile: false
   </tr>
   <tr>
     <td> Symbol </td>
-    <td> Python Programming  </td>
-    <td> Multiprocessing <br> Best practices  </td>
-  </tr>
-  <tr>
-    <td> Symbol </td>
     <td> Linux </td>
     <td> 
       <a href="{% link _notes/linux/linux_ecosystem.md %}"> Linux Ecosystem </a>  <br> 
@@ -69,6 +64,20 @@ author_profile: false
     <td> Random Stuff </td>
     <td> 
       <a href="{% link _notes/random/bike_valves.md %}"> Bike Valves </a> <br>
+    </td>
+  </tr>
+  <tr>
+    <td> Symbol </td>
+    <td> Economy and Finance </td>
+    <td> 
+      <a href="{% link _notes/economy_and_finance/the_great_recession.md %}"> The Great Recession </a> <br>
+    </td>
+  </tr>
+  <tr>
+    <td> Symbol </td>
+    <td> Geopolitics </td>
+    <td> 
+      <a href="{% link _notes/geopolitics/Morocco_economy.md %}"> The Great Recession </a> <br>
     </td>
   </tr>
 </table>
