@@ -23,3 +23,27 @@ You compile things for x86_64, or in general for an architecture.
 The goal of the bootstrapping procedure is to setup an environment from which the scripts from arch-install-scripts (such as pacstrap(8) and arch-chroot(8)) can be run.
 
 If the host system runs Arch Linux, this can be achieved by simply installing arch-install-scripts. If the host system runs another Linux distribution, you will first need to set up an Arch Linux-based chroot.
+
+I am installing Arch Linux, it would be a nightmare to go deep in everything I do not fully understand. 
+I just note down here things I am neglecting.
+Not sure how all the checksum and signature verification works.
+The commands for making a usb image do not work, I use the Linux Mint tool. LoL.
+What is UEFI mode. What is EFI system partition.
+So even the kernel is not mandatorily linux. What about the alternatives?
+What is chrooting? Apparently it kind of opening a unix shell in the system that I just installed in the root filesystem partition.
+Because for example I had nano in the live image of ArchLinux, but I do not have nano in this shell after chroot.
+What is the fstab file for?
+
+Overall, it seems like the really key passages when installing an operating system from a console are: make the right partitions, with the right format.
+Install the OS in the root partition (which is equivalent to say: create a bunch of folder and files in that partition.
+Install the bootloader in the right place, and give it the right configuration.
+
+Now arch-linux is running. I already have a lot of folders that I do not understand, full of things that I do not understand, in my root I mean.
+Not very nice.
+Anyway, since I am not superexcited of losing time, I head to the Desktop Enviroment page of Arch Linux Wiki.
+
+Damn it, lost a lot of time just to make systemd-netword working. And probably I will end up using a network manager.
+Anyway, now I installed hyprland.
+I installed kitty terminal emulator.
+I installed uwsm (universal wayland session manager).
+
