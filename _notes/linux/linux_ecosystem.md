@@ -5,6 +5,14 @@ tag: linux
 permalink: /notes/linux/linux_ecosystem
 ---
 
+## Terminology
+- devices: any hardware, also disk partitions
+
+
+## Disk partition
+Pro tip: it was quite stupid to have the whole disk as my Linux Root Filesystem.
+
+
 ## Linux Kernel
 The linux kernel is the core of the operating system.
 It manages all the physical devices.
@@ -22,6 +30,16 @@ Each device in the system is represented by a *device special file*, and all the
 Drivers are stored in the directory `/lib/modules/`.
 
 Drivers can be installe on a linux system using the package manager.
+
+## Swap
+A swap partition requires creating a partition, which is very hard to resize later, sometimes so hard that a full reinstall is required.
+A swap file is a specially created file, normally located in the root '/' directory, that's just as fast as a partition, but that's much easier to change later if need be.
+Most modern installers create a swap file because of its many advantages over a partition.
+
+Swap partitions had advantages over swap files before the era of SSDs. They ensure that the swap space is contiguous, which reduces head seeking. You can also place the swap partition at the edge of the platter where reading and writing is faster than in the middle.
+These days with SSDs being common, it doesn't really matter anymore.
+
+Fair question. I've been using a swap file for probably a decade or more by now. Never noticed any performance penalty over a dedicated partition. Those who claim that a partition is faster, I'd like to see some actual benchmarks that confirm that. I've never seen any.
 
 ## Linux Folders
 Usually, the root of a linux system contains the following folders:

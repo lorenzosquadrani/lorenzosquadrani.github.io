@@ -182,6 +182,17 @@ $$
 M_X(t) = \int_0^\infty e^{t x} \lambda e^{-\lambda x} dx = \frac{\lambda}{\lambda - t}
 $$
 
+Another example.
+If $$X$$ is a random variable uniformly distributed in the interval $$[a,b]$$, its moment generating function is:
+
+$$
+M_X(t) = \int_a^b \frac{e^{t x}}{b-a}  dx = \frac{\left[e^{tx}\right]_a^b}{(b-a)t} = \frac{e^{bt} - e^{at}}{(b-a)t}
+$$
+
+Notice that in $t=0$ it is not defined. 
+I am not sure why, but in this case it is common practice to define $$M_X(0)\equiv 1$$. 
+Hopefully, the limit is also correct.
+
 
 ## Theorems
 
@@ -207,7 +218,15 @@ Let us see an example, using first principles.
 Let $$T$$ be a random variable with values in $$[0, \infty]$$ and probability density function $$f_T(t) = \lambda e^{-\lambda t}$$.
 Let $$X = e^{- T/\tau}$$.
 
+### Moment Generating Function of the sum of independent random variables
+If $$X_1$$ and $$X_2$$ are independent random variables with moment generating function $$M_{X_1}(t)$$ and $$M_{X_2}(t), then $$Y=X_1 + X_2$$ has
+the following moment generating function:
 
+$$
+M_Y(t) = M_{X_1}(t) M_{X_2}(t)
+$$
+
+For example, if $$X_1$$ and $$X_2$$ are both uniformly distributed in 
 
 ## Discrete Random Variables
 
