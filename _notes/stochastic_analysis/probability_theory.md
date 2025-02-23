@@ -1,11 +1,14 @@
 ---
+layout: splash
 title: "Probability Theory"
 collection: notes
 tag: Stochastic Analysis for Finance
 permalink: /notes/stochastic_analysis_for_finance/probability_theory
 ---
 
-## Some definitions
+# Basics of Probability Theory
+
+## Definitions
 
 ### $$\sigma$$-algebra and Measurable Space
 Let $$\Omega$$ be a set. 
@@ -180,7 +183,7 @@ M_X(t) = \int_0^\infty e^{t x} \lambda e^{-\lambda x} dx = \frac{\lambda}{\lambd
 $$
 
 
-## Some Theorems
+## Theorems
 
 ### Weak Law of Large Numbers
 Let $$X_1, X_2, \ldots$$ be a sequence of independent and identically distributed random variables with finite mean $$\mu$$ and finite variance $$\sigma^2$$.

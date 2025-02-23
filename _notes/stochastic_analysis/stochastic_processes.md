@@ -1,4 +1,5 @@
 ---
+layout: splash
 title: "Stochastic Processes"
 collection: notes
 tag: Stochastic Analysis for Finance
@@ -29,7 +30,6 @@ p(x_1, t_1; x_2, t_2; x_3, t_3; ...) = \prod_i p(x_i, t_i)
 $$
 
 
-
 ### Filtration
 Let $$(\Omega, \mathcal{F})$$ be a measurable space and $$I \subset \mathbb{R}$$ be an index set.
 We call filtration any sequence of $$\sigma$$-algebras $$\{\mathcal{F}_t\}_{t \in I}$$, such that $$\mathcal{F}_s \subset \mathcal{F}_t$$ for any $$s \leq t$$.
@@ -44,7 +44,7 @@ A stochastic process $$\{X_t\}_{t \in I}$$ is said to be adapted to the filtrati
 
 Originally, the term *Brownian motion* referred to a physical phenomenon observed by the botanist Robert Brown in 1827.
 He observed that pollen grains suspended in water perform an apparently random motion.
-It phenomenon was modeled mathematically by the mathematician Louis Bachelier in 1900, and later by Albert Einstein in 1905.
+The phenomenon was then modelled by the mathematician Louis Bachelier in 1900 and by Albert Einstein in 1905.
 Later, Norbert Wiener devoloped a rigorous mathematical theory of Brownian motion, which is now a fundamental concept in stochastic analysis, and sometimes called *Wiener process*.
 
 ### Definition
@@ -56,8 +56,135 @@ We say that $$W_t$$ is a Brownian motion if:
 - For any $$0 \leq s < t$$, the increment $$W_t - W_s$$ is normally distributed with mean 0 and variance $$t-s$$.
 - For $$0 \leq t_1 < t_2 < \ldots < t_n$$, the increments $$W_{t_2} - W_{t_1}, W_{t_3} - W_{t_2}, \ldots, W_{t_n} - W_{t_{n-1}}$$ are independent.
 
+Alternatively, in the course MIT 18.S096, to define the Brownian motion they start by this theorem:
+
+There exist a probability distribution over the set of continuous functions $$B: \mathbf{R}^+ \rightarrow \mathbf{R}$$, such that:
+- $$P(B(0)=0) = 1$$
+- $$B(t)-B(s) \tilde N(0, t-s) \qquad \forall 0\leq s\leq t$$
+- If the intervals $$[a, b]$$ and $$[c, d]$$ are non-overlapping, then $$B(b)-B(a)$$ and $$B(d)-B(c)$$ are independent.
+We call this probability distribution *Brownian motion*.
+
+In this theorem, the continuous functions are all the possible paths of the brownian motion.
+The brownian motion is defined as the probability distribution over this space of functions, which the properties that were listed.
+Mr. Lee says that this is somehow a "inverted" way of definining the process. 
+Because we are not saying consider this process, we say it is Brownian motion, if it satisfies this and this.
+Instead, we say there exists a process like this, we call it Brownian motion.
+It am not gonna lie, it feels a bit the same.
+But not sure.
+
+Euristically, the Brownian motion could be seen as the continuous time limit of the simple random walk.
+
+### Properties
+
+1. The brownian motion crosses the time axis infinitely often.
+2. The brownian motion does not deviate too much from $$t=y^2$$.
+
+3. If $$B_t$$ is the brownian motion and we define the process $$M_t = \max_{s\leq t} B(s)$$, then:
+
+$$
+P(M_t > a) = 2 P(B_t>a) \qquad \forall t
+$$
+
+*Proof*
+I take the proof from the MIT course.
+
+Let $$\tau_a$$ be the first crossing time of the line $$a$$, i.e. $$\tau_a = \min_{B_\tau =a} \{ \tau \}$$.
+Then:
+
+$$
+\begin{align}
+P(M_t>a) &= P(\tau_a < t) = \\
+&= P(B_t - B_{\tau_a} <0 | \tau_a < t) + P(B_t - B_{\tau_a} >0 | \tau_a < t) = \\
+&= 2P(B_t - B_{\tau_a} >0 | \tau_a < t) \\
+&= 2P(B_t - B_{\tau_a} >0) = \\
+&= 2P(B_t >a) 
+\end{align}
+$$
+
+If the first equatility does not convince you (it raised some doubts in me), just consider this, in which we use the law of total probability, plus the fact that a single value has a probability of 0:
+
+$$
+\begin{align}
+P(M_t>a) &= P(M_t\geq a) =\\
+&= P(\tau_a \leq t) P(M_t\geq a | \tau_a \leq t) + P(\tau_a>t) P(M_t \geq a | \tau_a >t) \\
+&= P(\tau_a \leq t) P(M_t\geq a | \tau_a \leq t) = \\
+&= P(\tau_a \leq t) = P(\tau_a < t)
+\end{align}
+$$
+
+4. Even if it is continuous everywhere, the brownian motion is nowhere differentiable. 
+More correctly, it is not differentiable with probability 1.
+
+*Proof*
+
+We proceed for absurd. 
+Suppose the brownian motion is differentiable at a certain time $$t$$:
+
+$$
+\frac{dB(t)}{dt} = A
+$$
+
+Then it mush hold (more or less, says Mr Lee):
+
+$$
+|B_{t+\epsilon} - B_t | \leq \epsilon A \qquad \forall \epsilon>0
+$$
+
+And thus:
+
+$$
+|M_\epsilon | \leq \epsilon A
+$$
+
+However, using the previous property, we can show that, in the limit $$\epsilon \rightarrow 0$$, the maximum is greater with probability 1.
+
+$$
+\begin{align}
+P(M_\epsilon>\epsilon A) &= 2 P(B_\epsilon > \epsilon A) = \\
+&= 2 P(N(0, \epsilon) > \epsilon A) = \\
+&= 2 P(N(0, 1) > \sqrt{\epsilon} A) \rightarrow 1 \qquad \text{ as } $\epsilon \rightarrow 0
+\end{align}
+$$
+
+From the last property, it follows that we cannot use any tool of calculus anymore :(.
+You cannot do any damn analysis on it. 
+Quite bad.
+Than we have to learn a new theory of calculus, called *Ito's calculus*.
+
+### Theorem of quadratic variation
+
+We proved that the brownian motion is not differentiable, but do we really know why it is so?
+The intuitive reason is: it just fluctuates too much, for gods' sake.
+In other words, it has a non-zero quadratic variation. LoL.
+Enough, let us state the theorem.
+
+If $$B(t)$$ is the brownian motion, then for all $$T>0$$ we with probability 1:
+
+$$
+\lim_{n\rightarrow \infty} \sum_{t=1}^n \left( B(t\frac{T}{n}) - B((t-1) \frac{T}{n}) \right)^2 = T
+$$
+
+Or, equivalently:
+
+$$
+(dB)^2 = dt^2
+$$
+
+The proof of the theorem is quite simple, but I do not feel like writing it down now.
+Just check the video of Mr Lee. 
+It is an application of the strong law of large numbers.
 
 ## Martingales
+
+Intuitively, according to Mr. Lee, a martingale is a stochastic process that does not have any natural tendency to go up or down.
+Slightly more formally, a process such that the expectation at every time in the future $$s>t$$ is equal to the value at time $$t$$, independently from whatever happened before $$t$$, i.e.:
+
+$$
+\mathbb{E}[X_s | \mathcal{F}_t] = X_t \qquad \forall t<s
+$$
+
+Weird. I need to correct what I just wrote.
+
 
 ### Definition
 Let $$\{ X_t \}_{t \in I}$$ be a stochastic process adapted to the filtration $$\{ \mathcal{F}_t \}_{t \in I}$$.
@@ -331,7 +458,7 @@ However, the event at time $t+s$ could also be the second subsequent one, or the
 To obtain the probability density of $t+s$ thus need to take into account all the possibilities, thus with a sum of infite terms:
 
 $$
-P(t+s|t) = P_0(s) + \int_0^{\infty} ds_1 P_0(s_1)P_0(s - s_1) + \iint__0^\infty ds_1 ds_2 P_0(s_1) P_0 (s_2) P_0(s - s_1 - s_2) + ...
+P(t+s|t) = P_0(s) + \int_0^{\infty} ds_1 P_0(s_1)P_0(s - s_1) + \iint_0^\infty ds_1 ds_2 P_0(s_1) P_0 (s_2) P_0(s - s_1 - s_2) + ...
 $$
 
 Equivalently, we can write:
@@ -345,7 +472,7 @@ Let us define $$f(s)= P(t+s|t)$$.
 We need to solve the equation:
 
 $$
-f(s) = P_0(s) + \int_0^\\infty P_0(s') f(s-s') ds'
+f(s) = P_0(s) + \int_0^\infty P_0(s') f(s-s') ds'
 $$
 
 Notice the convolution on the right-hand side.
@@ -363,7 +490,7 @@ $$
 $$
 
 
-## Poisson Cumulative Process
+## Poisson Cumulative Process or Compound Poisson Process
 
 Let $$\{W_n\}$$ be a sequence of independent and identically distributed random variables.
 Let $$N_t$$ be a Poisson counting process with rate $$\lambda$$.
@@ -375,6 +502,7 @@ $$
 
 with the convention that $$Z_t=0$$ if $$N_t=0$$.
 
+### Moment Generating Function
 The moment generating function of $$Z_t$$ is:
 
 $$
@@ -385,11 +513,71 @@ where $$M_W(p)$$ is the moment generating function of $$\{W_n\}$$.
 
 Let $$W_n$$ be exponentially distributed random variables with rate $$\nu$$.
 The probability density function for $$W_n$$ is $$\nu e^{-\nu w}.
-The moment generating function for $$W_n$$ is $$\frac{\nu}{\nu + p}.
+The moment generating function for $$W_n$$ is $$\frac{\nu}{\nu + p}$$.
 Thus, the moment generating function for the Poisson cumulative process is:
 
 $$
 M_Z(p, t) = \exp(\frac{\lambda \nu t}{\nu + p}  - \lambda t) 
+$$
+
+### Expected Value
+
+One can show that:
+
+$$
+E[Z_t] = E[N_t] E[W_n]
+$$
+
+where $$E[W_n]$$ does depend on $$n$$ since the $$W_n$$ were assumed to be identically distributed.
+
+To show it, we use the conditional expectation theorem, conditioning on the number of events:
+
+$$
+E[Z_t] = E[E[Z_t | N_t]] = \sum_{m=0}^\infty E[Z_t | N_t = m] P(N_t=m)
+$$
+
+Now $$Z_t \| N_t=m$$ is the random variable $$\sum_{n=1}^{m} W_n$$, of which we can compute the expectation:
+
+$$
+E[Z_t |N_t=m] = E[\sum_{n=1}^{m} W_n] = \sum_{n=1}^{m} E[W_n] = n E[W_n]
+$$
+
+thus:
+
+$$
+E[Z_t] = \sum_{m=0}^\infty m E[W_n] P(N_t=m) = E[N_t] E[W_n]
+$$
+
+### Variance
+
+One can show that:
+
+$$
+E[Z_t^2] = E[N_t] Var[W_n] + E[N_t^2] E^2[W_n]
+$$
+
+To show it, we use again the conditional expectation theorem, conditioning on the number of events:
+
+$$
+E[Z_t^2] = E[E[Z_t^2 | N_t]] = \sum_{m=0}^\infty E[Z_t^2 | N_t=m] P(N_t=m)
+$$
+
+On the other hand:
+
+$$
+\begin{aligned}
+E[Z_t^2 | N_t=m] &= E \left[ \left( \sum_{n=1}^m W_n \right)^2 \right] 
+                 = E\left[  \sum_{n=1}^m W_n^2 + \sum_{i \neq j = 1}^m W_i W_j \right] = \\
+                 &= \sum_{n=1}^m E[W_n^2] + \sum_{i\neq j =1}^m E^2[W_n] 
+                 = m E[W_n^2 ] + m(m-1) E^2[W_n] =\\
+                 &= m (E[W_n^2] - E^2[W_n]) + m^2 E^2[W_n]
+\end{aligned}
+$$
+
+Thus:
+
+$$
+E[Z_t^2] = \sum_{m=0}^\infty m (E[W_n^2] - E^2[W_n]) + m^2 E^2[W_n]P(N_t=m) = E[N_t] Var[W_n] + E[N_t^2] E^2[W_n]
 $$
 
 
@@ -406,7 +594,7 @@ $$
 P_0(s) = P(t + s | \hat t)
 $$
 
-where $$\int_t^{t+\Delta t} P(t' | t) dt'$$ is the probability that the next spike occurs in the interval $$[t, t+\Delta t]$$ given that the last spike occurred at time $$t$$.
+where $$\int_t^{t+\Delta t} P(t' \| t) dt'$$ is the probability that the next spike occurs in the interval $$[t, t+\Delta t]$$ given that the last spike occurred at time $$t$$.
 
 Given the ISI distribution for a spike train, it is possible to compute the mean firing rate. 
 One can show that the mean firing rate is the inverse of the mean ISI.
