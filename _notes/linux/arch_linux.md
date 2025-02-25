@@ -47,3 +47,4 @@ Anyway, now I installed hyprland.
 I installed kitty terminal emulator.
 I installed uwsm (universal wayland session manager).
 
+I installed it from scratch. Now I have the right partinioning.
