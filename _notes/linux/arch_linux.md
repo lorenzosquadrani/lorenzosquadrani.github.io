@@ -48,3 +48,10 @@ I installed kitty terminal emulator.
 I installed uwsm (universal wayland session manager).
 
 I installed it from scratch. Now I have the right partinioning.
+Janko made me install the tool fd, quite cool.
+How does it compare with whereis command?
+I chose pulse audio instead of pipewire damn. Now I do know how to switch, because hyprland wants pipewire. Or maybe not.
+The audio does not work now anyway, need to check it.
+I installed waybar, but did not configure it very much.
+I would like it to look like gnome as possible.
+
