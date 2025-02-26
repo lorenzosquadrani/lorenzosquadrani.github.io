@@ -63,3 +63,7 @@ Libreoffice for examples let you choose if you want to use GTK or Qt. Thus, it i
 VS-code needed a package org.freedesktop.secrets.
 Maybe secrets are not actually packages. What are secretes?
 To install it, I had to install one package among 4, I chose gnome-keyring.
+
+(from the archlinux guide)
+It is important to remember that there are two different kinds of configurations on a GNU/Linux system. System-wide configuration affects all users. Since system-wide settings are generally located in the /etc directory, root privileges are required in order to alter them. For example, to apply a Bash setting that affects all users, /etc/bash.bashrc should be modified.
+User-specific configuration affects only a single user. Dotfiles are used for user-specific configuration. For example, the file ~/.bashrc is the user-specific configuration file. The idea is that each user can define their own settings, such as aliases, functions and other interactive features like the prompt, without affecting other users' preferences.
