@@ -55,3 +55,11 @@ The audio does not work now anyway, need to check it.
 I installed waybar, but did not configure it very much.
 I would like it to look like gnome as possible.
 
+What is a fucking socket? How does it differ from a service?
+
+When I installed waybar there was some gtk libraries in the dependencies. Does it mean that the applications I want to use determine which graphics library I use? whether GTK or Qt or others? Is it correct to call them graphics library? 
+Libreoffice for examples let you choose if you want to use GTK or Qt. Thus, it is probably up to the developer to make the app compatible with a given graphics library.
+
+VS-code needed a package org.freedesktop.secrets.
+Maybe secrets are not actually packages. What are secretes?
+To install it, I had to install one package among 4, I chose gnome-keyring.
