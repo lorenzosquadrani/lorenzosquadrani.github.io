@@ -69,3 +69,13 @@ It is important to remember that there are two different kinds of configurations
 User-specific configuration affects only a single user. Dotfiles are used for user-specific configuration. For example, the file ~/.bashrc is the user-specific configuration file. The idea is that each user can define their own settings, such as aliases, functions and other interactive features like the prompt, without affecting other users' preferences.
 
 To make a service start at boot, just enable it with systemctl (like you start it, but enable).
+
+### Bluetooth
+
+### Notifications Manager
+Archlinux has in its core applications libnotify, which implements the Desktop notifications specifications, and it is compatible both with X11 and Wayland.
+You also need a notification server (or daemon).
+
+### Specifications
+A specification is a set of rules which define a standard way to implement a function, such as making an application run at startupu (XDG autotostart specification), or handling the notifications in a desktop environment (Desktop notifications specifications).
+All the specifications for open-source, desktop applications on linux are collected on specifications.freedesktop.com.
