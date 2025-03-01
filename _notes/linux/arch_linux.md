@@ -86,6 +86,37 @@ It is a completely different logic.
 So new mission: slowly build hyprland and debuilding GNOME. I already installed hyprland.
 We will face each issue one at a time.
 
+Not sure why I gave up also the other mission, and went for a fresh minimal install of archlinux. 
+Installed again hyprland and started makeing a DE from scractch.
+
+### Pacman
+To search for a package among installed ones:
+
+```
+pacman -Qs keyword
+```
+
+### OpenPGP
+OpenPGP is an open standard for cryptographic operations. 
+I am not sure what open means.
+Anyway this is a just a standard, i.e. a set of rules.
+
+### Keyring 
+I find on my archlinux the package `archlinux-keyring`. 
+It is part of the core of archlinux, but I read it was installed on my system as a dependency.
+I read it is required by base and base-devel.
+Base seems to be a minimal package installed when installing archlinux itself.
+So let us state this: archlinux comes with package called `archlinux-keyring`.
+But it only provides a command `archlinux-keyring-wkd-sync`, which I do not know that it does.
+
+Aha-aha. I have to install the library libsecret, archlinux core again.
+Oh it was already installed because required by other packages.
+I read that also org.freedesktop.secrets is installed. 
+Not sure when, but at a certain point I installed kwallet, which provides this secrets.
+Aha-aha. kwallet is KDE wallet. So no gnome-keyring is necessary. Fair enough.
+
+But what the fuck are secrets? Do not know.
+
 ### Network Manager
 GNOME uses network manager. 
 The service is probably already enabled, but we can check it via
@@ -98,6 +129,7 @@ Although it should be possible. Cmon it is not related to the compositor.
 Ye also the GNOME bar would be amazing to have in hyprland.
 
 ### Bluetooth
+I just installed bluez for getting the bluetooth.service and then blueman to have a panel applet.
 
 ### Notifications Manager
 Archlinux has in its core applications libnotify, which implements the Desktop notifications specifications, and it is compatible both with X11 and Wayland.
@@ -106,3 +138,19 @@ You also need a notification server (or daemon).
 ### Specifications
 A specification is a set of rules which define a standard way to implement a function, such as making an application run at startupu (XDG autotostart specification), or handling the notifications in a desktop environment (Desktop notifications specifications).
 All the specifications for open-source, desktop applications on linux are collected on specifications.freedesktop.com.
+
+### Media docs
+I installed libreoffice.
+
+### Application launcher and File search tool
+I want to use Albert. I like it, it always very fast. If it is too heavy and bloated as someone says I do not see it. The standard alternative would be rofi, but the wayland compatible versions at the moment does not have file search feature.
+
+But how can Albert do not care about Wayland or X11? I heard it is because it is uses Qt. But does it make sense?
+A Qt application could be run on X11 or Wayland.
+
+Anyway, Albert is available in AUR.
+
+### Synchronization with Google Drive
+I installed rclone via pacman (extra repository).
+First I need to set up the connection with my remote Google Drive.
+Just run `rclone config` for an interactive configuration session.
