@@ -89,6 +89,19 @@ We will face each issue one at a time.
 Not sure why I gave up also the other mission, and went for a fresh minimal install of archlinux. 
 Installed again hyprland and started makeing a DE from scractch.
 
+### Environment Variable
+What is an environment I am not sure, but I think it refers to a shell or bash thing. What is bash I am also not sure. What is a shell I am also not sure. LoL.
+
+Anyway how to list environment variables in the terminal?
+In archlinux the package coreutils provides the commanda printenv.
+It also provides the command env to run a command in a modified environment.
+I have use case for this: my XDG_CURRENT_DESKTOP environment variable is set to Hyprland. 
+However, flameshot looks for such variable and it does not recognize Hyprland. 
+To make it work, I might try to switch it to Sway, which I am sure it knows and it is similar to Hyprland.
+However, maybe other applications will behave weirdly if I change the environment variable. 
+Thus, I use env to run flameshot.
+Environment variables could be local or global.
+
 ### Pacman
 To search for a package among installed ones:
 
