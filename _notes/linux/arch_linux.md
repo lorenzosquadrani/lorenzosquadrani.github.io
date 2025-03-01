@@ -70,6 +70,17 @@ User-specific configuration affects only a single user. Dotfiles are used for us
 
 To make a service start at boot, just enable it with systemctl (like you start it, but enable).
 
+Ops, I made a fresh arch linux install, with full GNOME DE.
+Now I really want to understand if and how I can change the compositor of GNOME.
+GNOME is on wayland. Does it make sense to say so?
+Wayland is a display server protocol.
+Any display server using the Wayland protocol is called compositor.
+So the right sentence is: the GNOME desktop environment includes a compositor using the Wayland protocol.
+What is this compositor? It is Mutter. 
+Can I replace it with Hyprland? Does not seem easy. I read on GNOME page that they use hardware accelaration to make mutter run smooth.
+I am afraid the compositor is a bit at the hearth of the desktop environment, thus changing it is quite challenging. But let us see what we can do.
+The point is that I would like a dynamic compositor instead of a stacking one like Mutter.
+
 ### Bluetooth
 
 ### Notifications Manager
