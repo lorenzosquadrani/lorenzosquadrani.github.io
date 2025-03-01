@@ -80,6 +80,22 @@ What is this compositor? It is Mutter.
 Can I replace it with Hyprland? Does not seem easy. I read on GNOME page that they use hardware accelaration to make mutter run smooth.
 I am afraid the compositor is a bit at the hearth of the desktop environment, thus changing it is quite challenging. But let us see what we can do.
 The point is that I would like a dynamic compositor instead of a stacking one like Mutter.
+As I suspected, it is not possible to change mutter in GNOME. GNOME is build on mutter somehow.
+Even the gnome extensions that add some tiling power to the windows management of GNOME, do not get close to the power of a tiling compositor.
+It is a completely different logic.
+So new mission: slowly build hyprland and debuilding GNOME. I already installed hyprland.
+We will face each issue one at a time.
+
+### Network Manager
+GNOME uses network manager. 
+The service is probably already enabled, but we can check it via
+```
+systemctl list-unit-files
+```
+
+The problem is that the GUI that GNOME uses to display the wifi configuration is part of the GNOME core, prbabily of the GNOME applet. Quite hard to use on hyprland.
+Although it should be possible. Cmon it is not related to the compositor.
+Ye also the GNOME bar would be amazing to have in hyprland.
 
 ### Bluetooth
 
