@@ -102,6 +102,8 @@ However, maybe other applications will behave weirdly if I change the environmen
 Thus, I use env to run flameshot.
 Environment variables could be local or global.
 
+When we say that a package provides a command, we mean it provides a binary which is placed in the PATH (probably in /usr/bin) and thus can be used as a command.
+
 ### Pacman
 To search for a package among installed ones:
 
@@ -209,7 +211,10 @@ Although it should be possible. Cmon it is not related to the compositor.
 Ye also the GNOME bar would be amazing to have in hyprland.
 
 ### Bluetooth
-I just installed bluez for getting the bluetooth.service and then blueman to have a panel applet.
+I just installed bluez for getting the bluetooth.service, enabled it and then blueman to have a panel applet.
+But then I decided the panel applet is quite useless, since I very rarely connect new bluetooth items. 
+On those rare occasion, I can just easily use a CLI tool.
+The bluez-utils package provides `bluetoothctl`, which I find quite comfortable. 
 
 ### Notifications Manager
 Archlinux has in its core applications libnotify, which implements the Desktop notifications specifications, and it is compatible both with X11 and Wayland.
@@ -229,6 +234,14 @@ But how can Albert do not care about Wayland or X11? I heard it is because it is
 A Qt application could be run on X11 or Wayland.
 
 Anyway, Albert is available in AUR.
+
+Albert is gonna use default applications to open the files and the directory.
+Remember to set the as you wish.
+Default applications are dictated by the xdg standard.
+You can set them using the tool `xdg-settings` or `xdg-mime`.
+
+
+For example, I set my default application 
 
 ### Synchronization with Google Drive
 I installed rclone via pacman (extra repository).
