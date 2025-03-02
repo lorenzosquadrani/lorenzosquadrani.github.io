@@ -180,6 +180,18 @@ Now it works!
 Now I would like to assign the brightness controll to the keys of brightness on my keyboard.
 But what are they? Simply F6 and F7? Or are they considered differently? For example F3 (volume up), it is not considered F3 unless I keep pressed the key Fn.
 
+I ran showkeys --scancode and showkeys --keycode, but I got just useless numbers lol.
+Then I ran `wev`, and I noticed that I pressed the raise volume or the brightness up key, wev did not see anything.
+This meant that some process was capturing them before wev could. 
+This made sense because the volume was raised. 
+Who was raising the volume? It turns out it was the hyprland process.
+In hyprland.conf, there are already the keybinding for volume as well as brightness. 
+The brightness is bound to brightnessctl, a tool that I do not have and that is why it does not work. 
+I could replace it with xbacklight, or just install brightnessctl.
+Well I installed brighnessctl and it worked out of the box. 
+I even ask myself now if what I did before was necessary. I should try removing my user from the video group and see if it still works.
+We can do it again using `gpasswd`.
+
 
 
 ### Network Manager
