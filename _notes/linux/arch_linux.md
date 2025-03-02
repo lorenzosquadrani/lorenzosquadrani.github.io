@@ -191,6 +191,9 @@ I could replace it with xbacklight, or just install brightnessctl.
 Well I installed brighnessctl and it worked out of the box. 
 I even ask myself now if what I did before was necessary. I should try removing my user from the video group and see if it still works.
 We can do it again using `gpasswd`.
+Ok it looks like all the thing of the video group was useless.
+In particular, it is this brightnessctl that magically does not need the permissions to work.
+While, now that I have removed my user from video, xbacklight of course does not work.
 
 
 
