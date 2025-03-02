@@ -148,6 +148,32 @@ In the file I write rule:
 ```
 ACTION=="add", SUBSYSTEM=="backlight", KERNEL=="intel_backlight", RUN+="/usr/bin/chgrp video /sys/class/backlight/intel_backlight/brightness"
 ```
+What this command rule does it is not clear.
+But theoretically it should allow the users in the group video to access the brightness file as if they were root.
+But what are groups?
+Users and groups are used in GNU/Linux systems for access control.
+Every file on a GNU/Linux system is owned by a user and a group. In addition, there are three types of access permissions: read, write, and execute.
+Each file can have different permissions for the owner user, the owner group, and the others.
+The groups existing in the system are listed in the file `/etc/group`.
+I can check that the group `video` exists with the command:
+
+```
+cat /etc/group | grep video
+```
+
+I can check if my user is in the group with the command:
+
+```
+groups lorenzos
+```
+
+I am not, so I will add my user with the command:
+
+```
+gpasswd -a user group
+```
+
+Damn it, it still does not work.
 
 The classic CLI tool for controlling editing the files without using echo is `acpilight` which provides the command `xbacklight`.
 
