@@ -173,9 +173,13 @@ I am not, so I will add my user with the command:
 gpasswd -a user group
 ```
 
-Damn it, it still does not work.
-
 The classic CLI tool for controlling editing the files without using echo is `acpilight` which provides the command `xbacklight`.
+
+Now it works!
+
+Now I would like to assign the brightness controll to the keys of brightness on my keyboard.
+But what are they? Simply F6 and F7? Or are they considered differently? For example F3 (volume up), it is not considered F3 unless I keep pressed the key Fn.
+
 
 
 ### Network Manager
