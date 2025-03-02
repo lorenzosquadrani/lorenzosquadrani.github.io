@@ -130,6 +130,28 @@ Aha-aha. kwallet is KDE wallet. So no gnome-keyring is necessary. Fair enough.
 
 But what the fuck are secrets? Do not know.
 
+### Backlight
+So how backlight is handled really depends on the hardware.
+With Intel laptops, it usually through the ACPI interface.
+There is a kernel module, called ACPI, which controls the power of the screen's LEDs.
+Archlinux provides an interface to this module with the sysfs files in /sys/class/backlight.
+The two important files are `max_brightness`, which tells you which is the maximum level of brightness you can set, and `brightness` which tells you the current level of brightness and is modifiable.
+Notably, only the root user can edit the file by defualt.
+
+Thus, we need to set a udev rule.
+So first I check that the udevd.service, provided by systemd, is running and enabled. 
+I use `systemctl | grep udev` for this.
+Then I create a file `/etc/udev/rules.d/45-backlight.rules`. 
+The number 45 I do not know why, someone puts 90, someone puts nothing.
+In the file I write rule:
+
+```
+ACTION=="add", SUBSYSTEM=="backlight", KERNEL=="intel_backlight", RUN+="/usr/bin/chgrp video /sys/class/backlight/intel_backlight/brightness"
+```
+
+The classic CLI tool for controlling editing the files without using echo is `acpilight` which provides the command `xbacklight`.
+
+
 ### Network Manager
 GNOME uses network manager. 
 The service is probably already enabled, but we can check it via
