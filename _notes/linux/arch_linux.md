@@ -219,6 +219,7 @@ The bluez-utils package provides `bluetoothctl`, which I find quite comfortable.
 ### Notifications Manager
 Archlinux has in its core applications libnotify, which implements the Desktop notifications specifications, and it is compatible both with X11 and Wayland.
 You also need a notification server (or daemon).
+I just installed `swaync` and added it to hyrpland conf file to start at the DE boot.
 
 ### Specifications
 A specification is a set of rules which define a standard way to implement a function, such as making an application run at startupu (XDG autotostart specification), or handling the notifications in a desktop environment (Desktop notifications specifications).
