@@ -237,6 +237,23 @@ All the specifications for open-source, desktop applications on linux are collec
 ### Media docs
 I installed libreoffice.
 
+### Screenshots 
+
+I installed hyprshot. 
+I would like to fork it and edit so that in the notification also shows me to buttons, one for saving the screenshot and one for editing it.
+It seems doable because the whole hyprshot is just one shell file.
+The scripts uses some local variables to keep track of what is happening.
+But let us proceed by step.
+First of all I notice that hyprshot has an option to open the screenshot just acquired with a command of my choice.
+This is useful for the edit option: I can open the screenshot with my image editor.
+I tried swappy and satty, which are basically the same. I like a bit more the graphics from satty, so I'll go with it.
+
+I spotted the place of hyprshot where the notification is sent. 
+I would like to add the buttons save and edit. 
+Lucky for me, the standard libnotify with notify-send command supports adding buttons which returns certain values to the sender of the notification when clicked.
+So I will try to edit hyprshot now.
+
+
 ### Application launcher and File search tool
 I want to use Albert. I like it, it always very fast. If it is too heavy and bloated as someone says I do not see it. The standard alternative would be rofi, but the wayland compatible versions at the moment does not have file search feature.
 
