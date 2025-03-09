@@ -267,6 +267,9 @@ I think it could be handy sometimes, but sometimes not.
 Anyway, I notice that Hyprshot is using grimshot instead of grimblast, the version of grim developed directly by the hyprland team. 
 I guess I will use grimblast in my script.
 
+Actually grimblast is a full screenshot script. 
+I will try it and edit that one instead.
+
 
 ### Application launcher and File search tool
 I want to use Albert. I like it, it always very fast. If it is too heavy and bloated as someone says I do not see it. The standard alternative would be rofi, but the wayland compatible versions at the moment does not have file search feature.
