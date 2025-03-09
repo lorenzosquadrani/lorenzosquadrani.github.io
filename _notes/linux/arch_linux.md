@@ -252,6 +252,20 @@ I spotted the place of hyprshot where the notification is sent.
 I would like to add the buttons save and edit. 
 Lucky for me, the standard libnotify with notify-send command supports adding buttons which returns certain values to the sender of the notification when clicked.
 So I will try to edit hyprshot now.
+I can easily add the buttons to the notifications. 
+When the action options are used with notify-send, the process should automatically wait for the user to interact with the notification or for the notification timeout to pass. 
+Otherwise, the process would normally end after sending the notification, and there would be no way to use the user response with the buttons, which would be printed in the standard output of the shell that was used to call hyprshot.
+Unfortunately, I immediately notice that the process is not waiting at all. 
+There is an option to make it wait explicitily (althought it should be automatically on when using --action), but that option does not work.
+Eventually I spot in Hyprshot code a function called `checkRunning`, which looks very very ugly.
+It sleeps 1s, probably to give the time for the main functions to get active. 
+Then it continuosly checks for `slurp` to see if there is such process.
+If there is not, it kills the process hyprpicker, a tool used hyprshot when the FREEZE option is on.
+If I get rid of this checkRunning, the notify-send process correctly waits for my interaction with the notification.
+Now of course I wonder if I care of the freeze option.
+I think it could be handy sometimes, but sometimes not. 
+Anyway, I notice that Hyprshot is using grimshot instead of grimblast, the version of grim developed directly by the hyprland team. 
+I guess I will use grimblast in my script.
 
 
 ### Application launcher and File search tool
@@ -267,10 +281,19 @@ Remember to set the as you wish.
 Default applications are dictated by the xdg standard.
 You can set them using the tool `xdg-settings` or `xdg-mime`.
 
-
-For example, I set my default application 
-
 ### Synchronization with Google Drive
 I installed rclone via pacman (extra repository).
 First I need to set up the connection with my remote Google Drive.
 Just run `rclone config` for an interactive configuration session.
+
+### Hyprland Configuration
+
+I would like to have a battery-saving mode to run hyprland.
+Basically, when I am in the login tty, since in by bash_profile there is hyprland, it starts it automatically using the config in .config/hypr/hyprland.conf.
+But I can specify which config file to use with the parameter -c.
+Thus, I can make a config file which starts half of the processes, saving lot of batteru runtime.
+
+I would like the keybinding for whatsapp web to toggle its tab if it is already open. 
+How to do it I guess really depends on which browser I am using.
+
+
