@@ -41,10 +41,10 @@ If the exit code is zero (success), the list of commands following the keyword `
 otherwise it is skipped.
 The `elif` and `else` keyword works exactly as in any other if statement.
 
-The most common command following the `if` keyword used to be `[[` command, which has the following syntax:
+The most common command following the `if` keyword used to be `[` command, which has the following syntax:
 
 ```
-[[ args ... ]]
+[ args ... ]
 ```
 
 Notice that the last argument of the command `[[` must be `]]`.
