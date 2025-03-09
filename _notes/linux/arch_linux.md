@@ -95,11 +95,6 @@ What is an environment I am not sure, but I think it refers to a shell or bash t
 Anyway how to list environment variables in the terminal?
 In archlinux the package coreutils provides the commanda printenv.
 It also provides the command env to run a command in a modified environment.
-I have use case for this: my XDG_CURRENT_DESKTOP environment variable is set to Hyprland. 
-However, flameshot looks for such variable and it does not recognize Hyprland. 
-To make it work, I might try to switch it to Sway, which I am sure it knows and it is similar to Hyprland.
-However, maybe other applications will behave weirdly if I change the environment variable. 
-Thus, I use env to run flameshot.
 Environment variables could be local or global.
 
 When we say that a package provides a command, we mean it provides a binary which is placed in the PATH (probably in /usr/bin) and thus can be used as a command.
@@ -269,6 +264,7 @@ I guess I will use grimblast in my script.
 
 Actually grimblast is a full screenshot script. 
 I will try it and edit that one instead.
+First, I set the `GRIMBLAST_EDITOR` environment variable to be `satty` in my bashrc.
 
 
 ### Application launcher and File search tool
