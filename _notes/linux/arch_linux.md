@@ -292,7 +292,13 @@ Basically, when I am in the login tty, since in by bash_profile there is hyprlan
 But I can specify which config file to use with the parameter -c.
 Thus, I can make a config file which starts half of the processes, saving lot of batteru runtime.
 
-I would like the keybinding for whatsapp web to toggle its tab if it is already open. 
+I would like the keybinding for whatsapp web to toggle its tab if it is already open.
+
+### TODOs
+
+- printers software
+- battery saving hyprland config
+- battery usage checking software
 How to do it I guess really depends on which browser I am using.
 
 
