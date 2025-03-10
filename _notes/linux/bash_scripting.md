@@ -41,14 +41,24 @@ If the exit code is zero (success), the list of commands following the keyword `
 otherwise it is skipped.
 The `elif` and `else` keyword works exactly as in any other if statement.
 
-The most common command following the `if` keyword used to be `[` command, which has the following syntax:
+The most common command following the `if` keyword used to be `test` command, better known as the `[` command, which has the following syntax:
 
 ```
 [ args ... ]
 ```
 
-Notice that the last argument of the command `[[` must be `]]`.
+Notice that the last argument of the command `[` must be `]`.
 See the [example](https://guide.bash.academy/conditionals/?=Conditional_test_commands#p1.3.0_5) for clarification.
+Anyway, in the guide I read that nowadays the `test` command should be superseeded by the more powerfull `[[` command. 
+However, in all the scripts I read, I see much more the first one.
+
+Very useful will be to type
+
+```
+help test
+```
+
+when you are not sure about what the args mean.
 
 ### Bash Scripts
 
