@@ -1,4 +1,4 @@
-Everything is taken from this amazing [guide](https://guide.bash.academy/).
+Everything is taken from this amazing [guide](https://guide.bash.academy/), or this other amazing [guide](https://ryanstutorials.net/bash-scripting-tutorial/).
 
 ## Bash Quick Guide
 
@@ -24,7 +24,8 @@ If not, it looks if the name matches any of the builtin (which are small operati
 Finally, it looks among all the programs contained in the `PATH`.
 If no function, builtin nor program is found that matches the name, bash shows the error message `bash: name: command not found`.
 
-### Tests and Conditionals
+
+### If Statement
 
 The syntax for an _if compound_ is:
 
@@ -48,7 +49,6 @@ The most common command following the `if` keyword used to be `test` command, be
 ```
 
 Notice that the last argument of the command `[` must be `]`.
-See the [example](https://guide.bash.academy/conditionals/?=Conditional_test_commands#p1.3.0_5) for clarification.
 Anyway, in the guide I read that nowadays the `test` command should be superseeded by the more powerfull `[[` command. 
 However, in all the scripts I read, I see much more the first one.
 
@@ -60,7 +60,14 @@ help test
 
 when you are not sure about what the args mean.
 
-### Bash Scripts
+The boolean operators `&&` and `||` allows you to perform the __and__ and the __or__ between 
+multiple test commands:
+
+```
+[ args1 ] && [ args2 ] || [ args3 ]
+```
+
+## Bash Scripts
 
 A crash course on bash scripts.
 
@@ -69,26 +76,70 @@ Actually, all the resources collected here look amazing: https://learnbyexample.
 For getting quick technical information directly from the bash shell, use the `man bash` page and the commands `help`, `help read`.
 
 First you add or not add the `shebang` (`#!`) at the beginning of the script, followed by the absolute path of the shell that you want to exectute the script.
-You also can not adding it I think, and the shell that you call the script from will execute the script.
-Anyway, it is worth adding it explicitely:
+You also can avoid adding it I think, and the shell that you call the script from will execute the script.
+Anyway, it is good practice to add it explicitely:
 
 ```
 #! /bin/bash
 ```
 
-You can define variables as easily as:
+### Variables
+Variables are temporaty store for a piece of information.
+You can do two things with variables: set their value or read their value.
+
+A variable is set with the syntax:
 
 ```
-x = 2
-name = Pippo
+x=2
+name=Pippo
+sentence='Oh Mamma Mia'
+sentence_with_variable="Oh Mamma di $name"
+variable_with_substitution = $( ls )
 ```
 
-To get the value of the variable, you need to add `$` before the variable name:
+Notice that the absence of spaces is mandatory.
+When you need to store a string which includes spaces in a variable, you have to use the single quotes or the double quotes.
+If you want to use a variable when setting the value, you have to use the double quotes.
+If you want to set a variable with the output of a command you need to use the command substitutin syntax `$( command )`, where the spaces between the command and the brackets are not mandatory.
+
+To read the value of a variable you must put a `$` sign before its name.
+
+There are some special variables that the system sets when running a script. 
+There are:
+- `$0` - The name of the bash script.
+- `$1 - $9` - The first 9 arguments of the bash script.
+- `$#` - the number of arguments passed to the bash script.
+- `$@` - all the arguments supplied to the script.
+- `$?$` - The exit status of the most recently run process.
+- `$$` - The process ID of the current script.
+
+Additionally, all the environment variables are available in the script.
+
+### User input
+To ask the user for input you use the builtin `read`.
+There are multiple arguments to alter the behavior of `read`, you can read them with `help read`.
+The most basic usage is:
 
 ```
-echo $name
+read varname
+read -p 'Username: ' uservar
+read -sp 'Password: ' passvar
+read var1 var2 var3
 ```
 
+### STDIN, STDOUT, STDERR
+
+Maybe you did not know, but for every process your system is running, there is a 
+folder called `/proc/<processID>/`.
+Inside that folder you can find a lot of things, including the three text files:
+- `/proc/<processID>/fd/0` - where the standard input STDIN is written.
+- `/proc/<processID>/fd/0` - where the standard output STDOUT is written.
+- `/proc/<processID>/fd/0` - where the standard error STDERR is written.
+
+Within a script, these files are also reachable with the shortcuts `dev/stdin`, `/dev/stdout`, `/dev/stderr`.
+
+
+### Mathematical expressions
 To compute mathematical expressions, you need to use the keyword `expr` with the sintax:
 
 ```
