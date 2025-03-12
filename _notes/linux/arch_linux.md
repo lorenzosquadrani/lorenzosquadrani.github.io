@@ -320,6 +320,19 @@ I will just go with NeoVim, without any gui extension.
 The key feature of Vim is that it works with modes and commands.
 There are 4 modes: visualization, insertion, ..., command.
 
+### Tmux
+Let's go with Tmux.
+Tmux is a terminal multiplexer, i.e. a tool that helps you handle multiple terminals.
+It is organized in sessions, windows, and panes.
+Each session is its own login shell, thus with its own environment and its own life independent from your main login shell (meaning you could logout but processes run in the tmux sessions would still go on). 
+Quite useless since when I logout is just to power off my laptop anyway.
+So the windows are aumatically numbered and shown at the bottom of the tmux GUI.
+Each pane is a terminal.
+
+I installed the archlinux distribution of tmux of course.
+I chose not to install any plugins for now.
+Altought I was tempted to install tmux-sensible. I like the idea to have a common share configuration for all the world. But then that would have to be tmux default configuration. 
+
 ### TODOs
 
 - printers software
