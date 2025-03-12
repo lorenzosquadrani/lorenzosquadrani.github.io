@@ -294,6 +294,19 @@ Thus, I can make a config file which starts half of the processes, saving lot of
 
 I would like the keybinding for whatsapp web to toggle its tab if it is already open.
 
+I like the idea of that youtuber I forgot the name.
+The idea was that every workspace has a default program running, which is always the same, so that really you do not have to think
+were you want to quickly switch to another task. You are coding in workspace 3, you think oh I should write down this note, you switch to workspace 2 
+where simplenote in waiting for you in your browser and you do it. 
+It would be SO annoyting having to open a new browser in the same workspace, splitting the screen, to that and closing.
+Of course, when a single task requires two or more programs, you can always open new instances.
+The workspaces could be:
+1 - tmux session
+2 - coding (vscode or nvim)
+3 - browser (whatsapp, simplenote, google calendar)
+4 - emails
+special workspace: spotify
+
 ### Text editor
 
 Let us try to learn Vi/Vim/NeoVim/that thing.
