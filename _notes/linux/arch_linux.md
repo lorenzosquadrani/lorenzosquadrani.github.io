@@ -300,6 +300,9 @@ Let us try to learn Vi/Vim/NeoVim/that thing.
 Vim is a terminal text editor.
 There is also a version with the GUI, caleld gVim.
 I will try that one to learn.
+Ok no, I tried it very quickly and it seems like it just add useless GUI.
+Not GUI that lets me learn faster.
+I will just go with NeoVim, without any gui extension.
 
 The key feature of Vim is that it works with modes and commands.
 There are 4 modes: visualization, insertion, ..., command.
