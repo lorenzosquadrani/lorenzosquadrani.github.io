@@ -294,6 +294,16 @@ Thus, I can make a config file which starts half of the processes, saving lot of
 
 I would like the keybinding for whatsapp web to toggle its tab if it is already open.
 
+### Text editor
+
+Let us try to learn Vi/Vim/NeoVim/that thing.
+Vim is a terminal text editor.
+There is also a version with the GUI, caleld gVim.
+I will try that one to learn.
+
+The key feature of Vim is that it works with modes and commands.
+There are 4 modes: visualization, insertion, ..., command.
+
 ### TODOs
 
 - printers software
