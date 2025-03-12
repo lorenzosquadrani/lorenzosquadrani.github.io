@@ -192,8 +192,6 @@ Ok it looks like all the thing of the video group was useless.
 In particular, it is this brightnessctl that magically does not need the permissions to work.
 While, now that I have removed my user from video, xbacklight of course does not work.
 
-
-
 ### Network Manager
 GNOME uses network manager. 
 The service is probably already enabled, but we can check it via
@@ -307,6 +305,8 @@ The workspaces could be:
 4 - emails
 special workspace: spotify
 
+Now I make that at startup, hyprland opens a tmux session in my workspace 1 and the browser in workspace 3.
+
 ### Text editor
 
 Let us try to learn Vi/Vim/NeoVim/that thing.
@@ -331,7 +331,25 @@ Each pane is a terminal.
 
 I installed the archlinux distribution of tmux of course.
 I chose not to install any plugins for now.
-Altought I was tempted to install tmux-sensible. I like the idea to have a common share configuration for all the world. But then that would have to be tmux default configuration. 
+Altought I was tempted to install tmux-sensible. I like the idea to have a common share configuration for all the world. But then that would have to be tmux default configuration.
+
+**Usage**
+Basically you use tmux as one, two, or very many terminals. 
+What you need to know is how to create new terminals in the position that you like, and how to move among them.
+Every action that you can do in tmux starts with the `<PREFIX>`, which is by default `CTRL+b`.
+After the prefix key, you type the command that you want to execute. 
+The basics ones are:
+- `c` - create and focus a new window
+- `1` - focu window 1 (and so for any number)
+- `%` - split the pane horizontally
+- '"' - split the pane vertically
+- `arrow keys` - move through panes
+- `q` - show panes number and then pick one
+But just use the [cheatsheet](https://tmuxcheatsheet.com/).
+
+I installed some commong plugins:
+- tmux pluggins manager
+- tmux-sensible (some configurations on which everyone should agree on)
 
 ### TODOs
 
