@@ -320,6 +320,8 @@ I will just go with NeoVim, without any gui extension.
 The key feature of Vim is that it works with modes and commands.
 There are 4 modes: visualization, insertion, ..., command.
 
+I suspend the switching to Neovim, for when I have time or when I really need it.
+
 ### Tmux
 Let's go with Tmux.
 Tmux is a terminal multiplexer, i.e. a tool that helps you handle multiple terminals.
@@ -329,11 +331,6 @@ Quite useless since when I logout is just to power off my laptop anyway.
 So the windows are aumatically numbered and shown at the bottom of the tmux GUI.
 Each pane is a terminal.
 
-I installed the archlinux distribution of tmux of course.
-I chose not to install any plugins for now.
-Altought I was tempted to install tmux-sensible. I like the idea to have a common share configuration for all the world. But then that would have to be tmux default configuration.
-
-**Usage**
 Basically you use tmux as one, two, or very many terminals. 
 What you need to know is how to create new terminals in the position that you like, and how to move among them.
 Every action that you can do in tmux starts with the `<PREFIX>`, which is by default `CTRL+b`.
@@ -351,6 +348,9 @@ I installed some commong plugins:
 - tmux pluggins manager
 - tmux-sensible (some configurations on which everyone should agree on)
 
+### Power management
+Before trying any optimization of power consumption, I need to have a way to evaluate it.
+To do that, I first try `powertop`.
 ### TODOs
 
 - printers software
