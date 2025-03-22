@@ -1,4 +1,9 @@
-### Who is studyind blackheads?
+---
+title: "Blackheads"
+permalink: /notes/health/blackheads
+---
+
+### Who is studying blackheads?
 
 ### What are blackheads?
 

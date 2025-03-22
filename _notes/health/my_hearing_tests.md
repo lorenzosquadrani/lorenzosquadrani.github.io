@@ -1,7 +1,5 @@
 ---
 title: "My Hearing Tests"
-collection: notes
-tag: health
 permalink: /notes/health/my_hearing_tests
 ---
 

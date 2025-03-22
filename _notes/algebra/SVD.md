@@ -1,5 +1,9 @@
+---
+title: "Singular Value Decomposition"
+permalink: /notes/algebra/svd
+---
 
-Pro tips: in a product of matrices, the number of columns of the matrix on the left must match the number of rows of the matrix on the right. 
+Pro tips for dummies: in a product of matrices, the number of columns of the matrix on the left must match the number of rows of the matrix on the right. 
 For example a matrix m x n (m rows and n columns) can be multiplied only by a matrix n x l.
 The results is a matrix m x l.
 The columns space has maximum dimension equal to the number of rows, and vice versa.

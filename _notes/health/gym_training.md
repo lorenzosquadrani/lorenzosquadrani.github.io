@@ -2,6 +2,11 @@ Collecting information from multiple sources you quickly realize that everything
 Despite the amount of scientific research, "facts" are quite rare. 
 Mainly the only two facts are: for your muscle to grow, you need to put them under stress and then let them recover.
 
+The second rule that I like is already more an arbitrary rule that a fact, but I appreciate its pragmatism.
+The rule is: to train all the muscles of your upper body you need to do four exercise: a vertical push, an horizontal push, a vertical pull, an horizontal pull. 
+The same applies for your lower body.
+What do push and pull, horizontal and vertical mean very clear from some examples: bench press is an horizontal push, overhead press is a vertical push, pull ups are a vertical pull, row is an horizontal pull.
+
 In the end I just decided to go for the Stronglift 5x5 program, mainly for comfort.
 
 The notions I heard and I trust the most are the ones from Pietro.
@@ -47,4 +52,4 @@ Triceps:
 
 ### References
 - https://www.youtube.com/watch?v=JuNiXWekPjw
--https://www.youtube.com/watch?v=2kui0fFKMyE
+- https://www.youtube.com/watch?v=2kui0fFKMyE

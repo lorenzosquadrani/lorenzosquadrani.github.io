@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /notes/
-title: "Personal Notes"
+title: Personal Notes
 author_profile: false
 ---
 
@@ -27,9 +27,9 @@ author_profile: false
     <td> Symbol </td>
     <td> Linux </td>
     <td> 
-      <a href="{% link _notes/linux/linux_ecosystem.md %}"> Linux Ecosystem </a>  <br> 
-      <a href="{% link _notes/linux/my_distro_configuration.md %}"> My Distro Configuration </a> <br> 
-      <a href="{% link _notes/linux/HPC_server.md %}"> High Performance Computing Servers </a> <br>  
+      <a href="{% link _notes/informatics/linux_ecosystem.md %}"> Linux Ecosystem </a>  <br> 
+      <a href="{% link _notes/informatics/my_distro_configuration.md %}"> My Distro Configuration </a> <br> 
+      <a href="{% link _notes/informatics/HPC_server.md %}"> High Performance Computing Servers </a> <br>  
     </td>
   </tr>
   <tr>
@@ -70,14 +70,7 @@ author_profile: false
     <td> Symbol </td>
     <td> Economy and Finance </td>
     <td> 
-      <a href="{% link _notes/economy_and_finance/the_great_recession.md %}"> The Great Recession </a> <br>
-    </td>
-  </tr>
-  <tr>
-    <td> Symbol </td>
-    <td> Geopolitics </td>
-    <td> 
-      <a href="{% link _notes/geopolitics/Morocco_economy.md %}"> The Great Recession </a> <br>
+      <a href="{% link _notes/economy/the_great_recession.md %}"> The Great Recession </a> <br>
     </td>
   </tr>
 </table>

@@ -1,6 +1,9 @@
+---
+title: "Protein intake"
+permalink: /notes/health/protein_intake
+---
 
-
-The International Sociaty of Sports Nutritionsì stands:
+The International Sociaty of Sports Nutritions stands:
 
 - It seems like it make sense to take proteins soon before or after the muscle-stimulating exercise. Current evidence favors the post-exercise period as a time when rapid hyperaminoacidemia promotes a marked rise in the rate of MPS. 
 - The protein intake should be in the range of 1.4–2.0 g protein/kg body weight/day. It is unsure whether higher doses have some benefits, but it seems like not. A review paper from 2018 suggests that protein intakes at amounts greater than ~1.6 g/kg/day do not further contribute RET-induced gains in FFM.
@@ -9,7 +12,6 @@ The International Sociaty of Sports Nutritionsì stands:
 
 
 I also tried the app Macrofactor suggested and co-owned by Jeff Nippard on Youtube.
-
 
 
 ### References

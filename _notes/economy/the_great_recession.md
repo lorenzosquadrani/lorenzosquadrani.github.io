@@ -1,3 +1,8 @@
+---
+title: "The Great Recession"
+permalink: /notes/economy/the_great_recession
+---
+
 ## The Great Recession
 
 *These are notes from the video [https://www.youtube.com/watch?v=2TuJkp1z8PM]*

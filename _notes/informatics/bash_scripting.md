@@ -1,3 +1,8 @@
+---
+title: "Bash scripting"
+permalink: /notes/informatics/bash_scripting
+---
+
 Everything is taken from this amazing [guide](https://guide.bash.academy/), or this other amazing [guide](https://ryanstutorials.net/bash-scripting-tutorial/).
 
 ## Bash Quick Guide

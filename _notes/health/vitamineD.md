@@ -1,4 +1,7 @@
-
+---
+title: "Vitamin D"
+permalink: /notes/health/vitamine_D
+---
 ### How to get vitamin D
 
 There are two ways vitamin D can get into our body: (1) through our GIT (gastrointestinal trac) and (2) by synthesization inside your body.

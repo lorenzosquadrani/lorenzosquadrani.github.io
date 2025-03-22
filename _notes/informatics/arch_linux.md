@@ -1,3 +1,8 @@
+---
+title: "Arch Linux"
+permalink: /notes/informatics/archlinux
+---
+
 What the fuck is Arch Linux?
 
 It is just another distribution of Linux.

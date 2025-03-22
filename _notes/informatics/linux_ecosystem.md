@@ -1,8 +1,6 @@
 ---
 title: "Linux Ecosystem"
-collection: notes
-tag: linux
-permalink: /notes/linux/linux_ecosystem
+permalink: /notes/informatics/linux_ecosystem
 ---
 
 ## Terminology

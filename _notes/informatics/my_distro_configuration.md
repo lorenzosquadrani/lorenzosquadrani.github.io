@@ -1,8 +1,6 @@
 ---
 title: "My Linux Distro Configuration"
-collection: notes
-tag: linux
-permalink: /notes/linux/my_linux_distro_configuration
+permalink: /notes/informatics/my_linux_distro_configuration
 ---
 
 ## Distro: Linux Mint
