@@ -1,0 +1,34 @@
+.navbar {
+  background-color: #222; /* Dark background for contrast */
+  padding: 15px 0;
+  //border-bottom: 4px solid #27548A; /* Stylish bottom border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center;
+}
+  
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+  
+.navbar ul li {
+  display: inline;
+}
+  
+.navbar ul li a {
+  text-decoration: none;
+  color: white; /* Light text for contrast */
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+}
+  
+.navbar ul li a:hover {
+  background-color: #27548A; /* Highlight on hover */
+  border-radius: 5px;
+  color: #fff;
+}

@@ -1,0 +1,85 @@
+.note-container {
+  display: flex;
+  max-width: 90%;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+.note-sidebar {
+  width: 20%;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.note-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.note-sidebar ul li a {
+  text-decoration: none;
+  color: #0078D7;
+  font-weight: bold;
+  display: block;
+  padding: 8px 0;
+}
+
+/* Main Content */
+.note-content {
+  width: 75%;
+  margin-left: 5%;
+}
+
+.note-meta {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.note-body {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* Code Blocks */
+pre {
+  background: #272822;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+/* Related Notes */
+.related-notes {
+  margin-top: 40px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.related-notes ul {
+  padding-left: 20px;
+}
+
+
+/* Table of Contents */
+#toc ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+#toc ul li {
+  margin: 5px 0;
+}
+
+#toc ul li a {
+  color: #333;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+#toc ul li a:hover {
+  color: #0078D7;
+}

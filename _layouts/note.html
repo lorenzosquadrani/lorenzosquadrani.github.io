@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/note_style.css' | relative_url }}">
+    <script src="{{ '/assets/js/toc.js' | relative_url }}"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+{% include navbar.html %}
+
+<div class="note-container">
+    <!-- Sidebar for navigation -->
+
+    {% if page.sidebar %}
+    <aside class="note-sidebar">
+        
+        <h3>📖 Table of Contents</h3>
+        <nav id="toc">
+            <ul id="toc-list"></ul>
+        </nav>
+
+        {% if page.related %}
+
+        <h3>📌 Related Notes</h3>
+        <ul>
+            {% for related in page.related %}
+                <li><a href="{{ related.url }}"> → {{ related.title }}</a></li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+
+    </aside>
+    {% endif %}
+
+    <!-- Main content -->
+    <main class="note-content">
+
+        <div class="note-meta">
+            <span> Last updated: {{ page.date | date: "%B %d, %Y" }}</span>
+        </div>
+
+        <h1>{{ page.title }}</h1>
+        
+        <article class="note-body">
+            {{ content }}
+        </article>
+
+    </main>
+</div>
+
+</body>
+</html>

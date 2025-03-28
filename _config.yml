@@ -1,0 +1,22 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "L. Squadrani" # the name of your site, e.g. ACME Corp.
+
+include: ["_pages"]
+safe: true
+markdown: kramdown
+kramdown:
+nav_links:
+  - name: About
+    url: /
+  # - name: Publications
+  #   url: /publications
+  # - name: CV
+  #   url: /cv
+  - name: Notes
+    url: /notes
+
+collections:
+  notes:
+    output: true  # Makes each note accessible as a page
+    permalink: /notes/:path/

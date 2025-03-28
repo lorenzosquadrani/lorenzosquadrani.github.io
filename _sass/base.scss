@@ -1,0 +1,64 @@
+$backgroundColor: #ffffff;
+$bodyColor: #000000;
+$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+body {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
+}
+
+.container {
+  max-width: 1000px; /* Adjust width as needed */
+  margin: auto; /* Centers the container */
+  padding: 20px;
+  background: #ffffff; /* Optional: background color */
+  min-height: 60vh;
+  // border-right:#000000 4px solid;
+  // border-left:#000000 4px solid;
+  // border-bottom: #000000 4px solid;
+}
+
+.notes-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+.notes-table th, .notes-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.notes-table th {
+  background-color: #0077cc;
+  color: white;
+  font-weight: bold;
+}
+
+
+.notes-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.notes-table ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.notes-table ul li {
+  padding: 5px 0;
+}
+
+.notes-table a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+}
+
+.notes-table a:hover {
+  text-decoration: underline;
+}
