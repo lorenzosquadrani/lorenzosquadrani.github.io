@@ -4,15 +4,9 @@ title: "Singular Value Decomposition"
 sidebar: true
 ---
 
-Pro tips for dummies: in a product of matrices, the number of columns of the matrix on the left must match the number of rows of the matrix on the right. 
-For example a matrix m x n (m rows and n columns) can be multiplied only by a matrix n x l.
-The results is a matrix m x l.
-The columns space has maximum dimension equal to the number of rows, and vice versa.
-
-**Theorem**
+### Theorem
 Let $$A$$ be a $$m \times n$$ matrix with rank $$r$$.
 Recall this means that $$A$$ has $$m$$ rows and $$n$$ columns, and from the set of all columns (rows) we can select at maximum $$r$$ vectors that are linearly independent.
-
 The space spanned by the columns of $$A$$ has dimension $$r$$, and the left null space has dimension $$m-r$$.
 The space spanned by the rows of $$A$$ has dimension $$r$$, and the right null space had dimension $$n-r$$.
 
@@ -20,18 +14,18 @@ The theorem of singular value decomposition (SVD) states that there exist a set 
 - $$\vec{u}_1, ..., \vec{u}_r$$ is an orthonormal basis of the column space
 - $$\vec{u}_{r+1}, ..., \vec{u}_m$$ is an orthonormal basis of the left null space
 - $$\vec{v}_1, ..., \vec{u}_r$$ is an orthonormal basis of the row space
-- $$\vec{v}_{r+1}, ..., \vec{v}_n$$ is an orthonormal basis of the rigt null space
+- $$\vec{v}_{r+1}, ..., \vec{v}_n$$ is an orthonormal basis of the right null space
 - $$A \vec{v}_1 = \sigma_1 \vec{u}_1$$, ... , $$A \vec{v}_r = \sigma_1 \vec{u}_r$$
 
 The vectors $$u_1, ..., u_r$$ are called left singular vectors of $$A$$, the vectors $$v_1, ..., v_r$$ are called right singular vectors of $$A$$, the $$\sigma_i$$ are called singular values of $$A$$.
 
-**Matrix formulation**
+### Matrix formulation
 The previous statement can be reformulated in single elegant espression using matrices.
 
 Let $$U$$ be the $$m \times m$$ matrix whose columns are $$\vec{u}_1, ..., \vec{u}_m$$.
 Let $$V$$ be the $$n \times n$$ matrix whose columns are $$\vec{v}_1, ..., \vec{v}_n$$.
 Let $$\Sigma$$ be the $$m \times n$$ matrix made of zeros, a part from the first $$r$$ diagonal terms which are $$\sigma_1, ..., \sigma_r$$.
-Then we can write all the previous relations in one line:
+Then we can write all the previous conditions in one line:
 
 $$
 A V = U \Sigma
