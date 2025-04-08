@@ -47,5 +47,7 @@ There is more than one way to package a Python project.
 The most appropriate one depends on the target audience, environment in which the package will be used, and some charcteristics of the project itself.
 
 
+### Python Testing
 
+Pytest, Nox.
 

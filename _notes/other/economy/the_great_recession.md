@@ -4,9 +4,10 @@ title: "The Great Recession"
 permalink: /notes/economy/the_great_recession
 ---
 
-## The Great Recession
+### The Great Recession
 
-*These are notes from the video [https://www.youtube.com/watch?v=2TuJkp1z8PM]*
+
+
 
 The 9th August 2007, the French bank BNP Paribas announced that it was suspending the calculation of the Net Asset Value (NAV) of three of its funds, because "the complete evaporation of liquidity in certain market segments of the US securitisation market has made it impossible to value certain assets fairly regardless of their quality or credit rating".
 Which is just a fancy way to say: "if an investor would like to get his money back, we cannot pay".
@@ -70,3 +71,9 @@ The concept of low discount rate is also connected to the increase of "domanda a
 Here comes the bubble of the houses.
 And of course, as we are repeating for a while now, the other effect of low discount rate is that the bank investors cannot use country titles to earn their bonuses, so they buy more derivatives.
 - In 1999, the distinction between commercial and investment banks is abolished.
+
+
+### References
+
+- This [video](https://www.youtube.com/watch?v=2TuJkp1z8PM)
+- Wikipedia

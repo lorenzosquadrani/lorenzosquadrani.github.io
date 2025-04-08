@@ -356,7 +356,24 @@ I installed some commong plugins:
 ### Power management
 Before trying any optimization of power consumption, I need to have a way to evaluate it.
 To do that, I first try `powertop`.
-### TODOs
+
+As the name suggest, if you run `sudo powertop` you get an interactive report of power-related statistics, similar to the classic `top` for CPU usage.
+To produce a report, use one of the following:
+```
+sudo powertop --html=report.html
+sudo powertop --csv=report.csv
+```
+The laptop should run on battery power in order to powertop to work.
+
+To increase the measurements accuracy run a calibration cycle at least once:
+```
+powertop --calibrate
+```
+
+The "entities" that consume power are:  process, device, kernel worker, timer, and interrupt handler.
+
+The power that an entity consume is significantly correlated with the number of times it wakes up the CPU.
+
 
 ### Printers software
 Basically there is one option: [CUPS](https://wiki.archlinux.org/title/CUPS). 
@@ -371,11 +388,24 @@ Just go to administration,
 
 For printers, we usually do not need to worry about drivers, as most recent printers support driverless usage.
 
+### Steam 
+
+Steam is game distribution platform, developed by Valve.
+The only Linux distribution officially supported is Ubuntu.
+
+A package for archlinux is distributed through the official repository [`multilib`](https://wiki.archlinux.org/title/Official_repositories#multilib).
+This repository is not enabled by default.
+To enable it, you need to edit the pacman config file `/etc/pacman.conf`, uncommenting the `[multilib]` section.
+Remember to upgrade the system afterwards.
+
+Most of the games are only for windows, and if you try to play it will say invalid platform.
+You need to enable the compatibility model in Steam settings.
 
 
-- printers software
+
+
+
 - battery saving hyprland config
-- battery usage checking software
 How to do it I guess really depends on which browser I am using.
 
 
