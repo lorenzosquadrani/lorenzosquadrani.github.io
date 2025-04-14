@@ -403,9 +403,3 @@ You need to enable the compatibility model in Steam settings.
 
 
 
-
-
-- battery saving hyprland config
-How to do it I guess really depends on which browser I am using.
-
-

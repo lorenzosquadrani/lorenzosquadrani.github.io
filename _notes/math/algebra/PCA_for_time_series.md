@@ -47,12 +47,52 @@ The rule of thumb is $$p=n/4$$.
 ### Multichannel SSA
 
 ### Principal Oscillation Pattern (POP) Analysis
+
 Consider a $$n\times p$$ data matrix of measurements on a meteorogical variable (to fix the ideas), taken at $$n$$ time points and $$p$$ spatial locations.
+Thus, we have a vector of stochastic processes ${\vec x}_t$, whose lag-dependent covariance matrix we denote with $\Gamma_j$.
+
+We assume that the $p$ time series can be modelled as a multivariate first-order autoregressive process, i.e.:
+$$
+{\vecx}_{t+1} - \vec \mu = A ({\vec x}_t - \vec mu) + \epsilon_t 
+$$
+
+It is a standard result that the best estimate of $A$ from our data is:
+$$
+\hat A = \Gamma_1 \Gamma^{-1}_0
+$$
+
+The POP analysis consists in the eigenanalysis of $\hat A$.
+The eigenvectors of $\hat A$ are called **principal oscillation patterns*.
+Why?
+
+Since $\hat A$ is not symmetric, it has in general a mixture of real and complex eigenvectors.
+The real eigenvectors describe non-oscillatory, non-propagating damped patterns, while the complex eigenvetors represent damped oscillations and can include standing waves and/or spatially propagating waves.
+
+*Note* The POP analysis can be applied also on the PCs of ${\vec x}_t$, instead of using the raw data.
+
+#### Example 1
+
+An example for this kind of techniques is really gold. 
+So, I try to understand the example given in Von Storch et al., 1988, even if it is extremely hard not being a climatologist.
+
+So, first let us give some basic definitions:
+A **mooring** is a line (often a rope or cable) anchored to the seafloor, usually with a weight at the bottom and flotation (typically buoys) at the top to keep the structure vertical in the water.
+A **current meter** is an instrument, typically attached to a mooring line, that measure: speed and direction of the water current, and possibly temperature, salinity, pressure.
+Multiple current meters are usually attached at multiple depths along a mooring line.
+A **zonal** current is a current that flows along lines of latitude (i.e. east-west direction).
+A **meridional** current is current that flows along lines of longitude (i.e. north-south direction).
+The same definitions apply for wind.
+
+
+#### Example 2
+https://www.ncl.ucar.edu/Applications/prn_osc_pat.shtml
 
 
 
+### Hilber (Complex) EOFs
 
-
+### References
+- Principal Component Analysis, I.T. Joliffe
 
 
 

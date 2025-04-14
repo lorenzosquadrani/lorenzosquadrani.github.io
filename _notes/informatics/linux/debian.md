@@ -1,5 +1,18 @@
 
+### Workspaces
+
+I configure workspaces for my GNOME desktop enviroment.
+In settings-multitasking I found some basics settings.
+Now I would like to add the workspace indicator in the top bar.
+The settings for the top bar should be in Tweaks, but there is quite little.
+I think I must use some extensions.
+I installed an extension for firefox to use the web-based extension system of GNOME.
+Apparently, the app `gnome-browser-connector` was already installed.
+
 ### Visual Studio Code
+
+#### Installation
+
 Microsoft itself provides a [repository](https://code.visualstudio.com/docs/setup/linux#_install-vs-code-on-linux) to distribute VS code to Debian.
 Of course, they provide the copy-paste snippet of bash commands to add and configure it, but let us try to understand them.
 
@@ -63,3 +76,13 @@ Now we install the package `apt-transport-https`.
 Actually, it seems like it is available by default in recent versions of `apt`, so we skip this step.
 We directly run `sudo apt update` and we see that the new repository is being detected.
 Now we can install code with `sudo apt install code`.
+
+
+#### Extensions
+
+If you are coding using Python, you will immediately asked to install the Python extension.
+This is an official extension (i.e. developed by the VS code developers).
+Its basic feature is too 'provide access points' to other extensions related with Python developing, in order to coordinate and integrate them.
+Indeed, the extension will automatically install two other extensions: Pylance and Python Debugger.
+I am not sure what this extension does on its own.
+
