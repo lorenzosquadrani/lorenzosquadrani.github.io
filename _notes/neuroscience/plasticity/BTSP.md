@@ -11,7 +11,7 @@ The first is as an experimental paper, the second a modeling one.
 ### Behavioral time scale synaptic plasticity underlies CA1 place fields (Bittner et al., 2017)
 
 
-Their closing sentence is: "Thus, BTSP may provide a more straightforward physiological basis for many types of learning than plasticity that explicitly conforms to Hebb’s postulate.
+Their closing sentence is: "Thus, BTSP may provide a more straightforward physiological basis for many types of learning than plasticity that explicitly conforms to Hebb’s postulate."
 
 
 ### References 

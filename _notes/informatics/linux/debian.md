@@ -1,4 +1,35 @@
 
+### Automatic Updates
+By default, Debian provides automatic updates for security and other critical stuff.
+Since it is just this really essential updates, I think it is ok to keep it automatic, so that you do not really care.
+Of course it would be different if the updates regarded multiple packages in the system, in which case you want to have more control on it.
+On the other hand, such upgrades are rare in Debian, and of couse are not automatic.
+
+Now, the gnome-software package may install also automatic software updates. 
+Those you can disably from its settings.
+
+### Power button behavior
+
+Thanks the linux god, Debian has an amazing wiki. 
+So here's the page for [configuring the power button](https://wiki.debian.org/ConfigurePowerButton).
+
+The default init system for Debian is `systemd`, and it is the one I have.
+In systemd-based systems, the behavior of the power button is handled by the daemon `systemd-logind`.
+The configuration of the daemon is in `etc/systemd/logind.conf`.
+
+Here, we change the lines:
+```
+[Login]
+HandlePowerKey=suspend
+HandlePowerKeyLongPress=poweroff
+```
+
+And then we restart the service:
+```
+systemctl restart systemd-logind.service
+```
+
+
 ### Workspaces
 
 I configure workspaces for my GNOME desktop enviroment.
