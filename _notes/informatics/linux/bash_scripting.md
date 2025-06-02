@@ -9,6 +9,7 @@ related:
 ---
 
 Everything is taken from this amazing [guide](https://guide.bash.academy/), or this other amazing [guide](https://ryanstutorials.net/bash-scripting-tutorial/).
+Actually, all the resources collected here look amazing: https://learnbyexample.github.io/curated_resources/linux_cli_scripting.html.
 
 ## Bash Quick Guide
 
@@ -29,8 +30,8 @@ The _simple commands_, which are the core of bash shell language, have the follo
 
 where the squared brackets denotes optional parts of the syntax.
 When a simple command is provided to bash, bash uses the `name` to try and find a: (1) function or (2) builtin or (3) program.
-The first it looks if in the list of all the previously defined functions there is a function matching the name.
-If not, it looks if the name matches any of the builtin (which are small operations built into bash, so that it does not need an external program to do that).
+First it looks whether in the list of all the previously defined functions there is a function matching the name.
+If not, it looks whether the name matches any of the builtin (which are small operations built into bash, so that it does not need an external program to do that).
 Finally, it looks among all the programs contained in the `PATH`.
 If no function, builtin nor program is found that matches the name, bash shows the error message `bash: name: command not found`.
 
@@ -77,13 +78,9 @@ multiple test commands:
 [ args1 ] && [ args2 ] || [ args3 ]
 ```
 
-## Bash Scripts
+### Scripting
 
-A crash course on bash scripts.
-
-Actually, all the resources collected here look amazing: https://learnbyexample.github.io/curated_resources/linux_cli_scripting.html.
-
-For getting quick technical information directly from the bash shell, use the `man bash` page and the commands `help`, `help read`.
+For getting quick technical information directly from the bash shell, use the `man bash` page and the commands `help`.
 
 First you add or not add the `shebang` (`#!`) at the beginning of the script, followed by the absolute path of the shell that you want to exectute the script.
 You also can avoid adding it I think, and the shell that you call the script from will execute the script.
@@ -172,26 +169,11 @@ expr 2 + 2
 echo $((2+2))
 ```
 
-To get user input we use the command `read`.
-Is you use `read x` the input value will be stored in the variable `x`.
 
-The basic syntax for `if` statements is:
+### Arguments
 
-```
-if [ conditions ]
-  then
-    commands
-fi
+Any bash script automatically accepts an arbitrary number of arguments as space-separated words/numbers.
+The arguments are accessible within the script as `$1`, `$2`, `$3`, etc.
+Note that the symbol `$0` is reserved for the name of the script itself (which you could consider as the 0-th argument).
 
-if [[ conditions ]]
-  then
-    commands
-  elif [[conditions]]; then
-    commands
-  else
-    do commands
-fi
-```
-
-Conditions are usually comparision between the values of variables and numbers, for which you use the keywords `-eq`, `gt`, `lt`, etc.
-To use AND and OR operators you use the keywords `-a` and `-o`.
+For flags here: https://medium.com/@wujido20/handling-flags-in-bash-scripts-4b06b4d0ed04

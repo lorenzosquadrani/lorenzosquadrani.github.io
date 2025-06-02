@@ -13,6 +13,7 @@ The International Sociaty of Sports Nutritions stands:
 
 
 I also tried the app Macrofactor suggested and co-owned by Jeff Nippard on Youtube.
+Useless to me.
 
 
 ### References

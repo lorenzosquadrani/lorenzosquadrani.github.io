@@ -1,3 +1,7 @@
+---
+layout: note
+title: "Microphones"
+---
 
 Lo stucco è un impasto a base di gesso, calce o cemento.
 La composizione può essere molto variabile, facendo del termine stucco una categoria di materiali più che un prodotto specifico.
@@ -27,3 +31,28 @@ Un intonaco in generale e' costituito da 3 componenti: il legante (calce, cement
 
 La stabilitura è il processo di applicazione di uno strato di malta fine, spesso chiamato intonachino o intonaco civile, come finitura di un intonaco. 
 Ha una doppia funzione: rende la parete liscia e uniforme, pronta per essere rifinita, e protegge l'intonaco sottostante. 
+
+
+### Cartongesso 
+
+La parete di cartongesso potrebbe essere fatta da una lastra singola o due lastre.
+
+Per fissare cose ad un muro di cartongesso, puoi ricorrere a:
+- viti con tassello specifico per cartongesso. C sono diversi tipi di tasselli: i piu classici sono quelli 'ad espansione', ma molto utili quelli 'GK' perche possono essere usati anche con un cacciavite/avvitatore, senza trapano.
+- una "colla di montaggio" (tipo Pattex Millechiodi), per cose relativamente leggere
+
+In realta' ho appeso una chitarra avvitando direttamente le viti nel cartongesso, col cacciavite, e per il momento sembra tenere. 
+Peraltro, le viti non credo fossero per montatura su legno.
+
+
+### Viti
+
+Le viti hanno diverse proprieta' che le rendono piu o meno adatte ad uno scopo specifico.
+Detto questo, per molti scopi una vite vale l'altra.
+
+Per il montaggio su un montante in legno, e' meglio una filettatura grossa (nel senso bassa frequenza angolare).
+Per il montaggio su un montante in metallo, e' meglio una filettatura fine.
+Perche? Non e' chiaro.
+
+Le viti autoperforanti sono viti con un punta molto acuminata.
+Le viti fosfatate sono viti rivestite con una sostanza che le rende nere e ha un'azione antiruggine.

@@ -44,7 +44,17 @@ We can describe a stretching exercise using the following parameters:
 
 - Elephant walk (20/30 reps per leg)
 - Single leg LDR
-- Grab your feet (30 secs per leg)
+- Grab your feet standing/seated (30 secs)
+
+#### Lower Back
+
+If you have back pain, stretching can help, but the best remedy seems to be strengthening your muscles.
+I say this based only on this [work](https://doi.org/10.5604/01.3001.0054.7266) though.
+
+- Child's Pose (hold for 60 secs)
+- Knee-to-chest (30/60 secs per leg)
+- Seated spinal twist (30/60 secs per side)
+- Cat-Cow (repeat for 1/2 minutes)
 
 ### References 
 - https://www.physio-pedia.com/Stretching
