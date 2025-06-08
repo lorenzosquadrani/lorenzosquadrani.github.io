@@ -1,3 +1,19 @@
+---
+layout: note
+title: "Linux Distributions"
+---
+
+## Linux Mint
+
+Linux Mint is a linux distribution based on Ubuntu.
+The Linux Mint version installed and the Ubuntu version it is based on are stored in `/etc/os-release` and `etc/upstream/lsb-release`.
+
+### Configuration steps:
+- Install Brave Browser
+- Set shortcuts for launchers and windows
+
+
+## Debian 
 
 ### Automatic Updates
 By default, Debian provides automatic updates for security and other critical stuff.
