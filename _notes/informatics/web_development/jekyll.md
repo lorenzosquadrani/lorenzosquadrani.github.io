@@ -3,8 +3,68 @@ title: "Jekyll"
 permalink: /notes/informatics/jekyll
 ---
 
+## What is Jekyll
 Jekyll is a _static site generator_.
 This means that if run the command `jekyll build`, within a folder in which there is a Gemfile (jekyll is written in Ruby) and a bunch of folders and files appropriately organized, the command will produce a website ready to be host on web server.
+
+## Installation
+
+Jekyll is written in Ruby, an interpreted language.
+Thus, you need an interpreter to use Jekyll.
+Most Linux distro have an officially supported interpreter that you can install using the packet manager. 
+For example in Linux Mint I use:
+```
+sudo apt install ruby-full
+```
+This command actually installs automatically a whole bunch of packages, in addition to `ruby`, which are: `onts-lato libgmp-dev libgmpxx4ldbl libruby libruby3.2 rake ri ruby ruby-dev ruby-net-telnet ruby-rubygems ruby-sdbm ruby-webrick ruby-xmlrpc ruby3.2 ruby3.2-dev ruby3.2-doc rubygems-integration`.
+I am not sure whether they are all needed in order to properly run Jekyll, but for sure `ruby-rubygems` is needed.
+
+Addionally, you need to have GCC and Make.
+GCC (the GNU Compiler Collection) is a bundle of compilers and libraries for C, C++, and many other languages.
+Make is a tool for automation widely used in multiple context. 
+If you have a Linux distro, you probably already have both of them.
+
+To install Jekyll you use the command `gem` provided by the tool RubyGems. 
+RubyGems is a package manager for Ruby.
+A package distrubuted through RubyGems is called a gem.
+We will install two gems: `jekyll` and `bundler`.
+I am not sure why we need `bundler`. 
+It seems to provide a "wrapping environment" in which to execute other gems.
+For example instead of executing directing the command `jekyll serve`, we will do `bundle exec jekyll serve`. 
+But the result is the same, so not sure.
+
+Install using gem:
+```
+gem install --user-install jekyll bundler
+```
+It is important to use the --user-install flag, otherwise gem will probably try to install the gems in a sudo-protected folder (where ruby was probably installed).
+The user-installed gems are (at least in my case) in `~/.local/share/gem/ruby/3.2.0/bin`. 
+We need to add it to the PATH variable in order to be able to execute our gems.
+So we add this line to out `.bashrc` file:
+```
+export PATH="~/.local/share/gem/ruby/3.2.0/bin:$PATH"
+```
+
+
+**Permission error** 
+If you get a permission error when you try to install a gem, it is probably because it is trying to install it in a folder with sudo privileges.
+Just use the `--user-install` flag to solve the problem.
+
+
+
+## Usage
+
+```
+jekyll new /PATH/TO/FOLDER
+```
+
+``` 
+bundle exec jekyll serve
+```
+
+## Exploration
+
+
 
 The file `_config.yml` looks very important in the Academics template.
 Oh well, to organize my notes page, it seems like I have to read of Jekyll works for real. 

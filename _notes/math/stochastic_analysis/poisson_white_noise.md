@@ -9,7 +9,7 @@ $$
 Z_t = \sum_{k=1}^{N_t} X_k
 $$
 
-where the $$\{\ X_k , k \geq 1 \} is a collection of real-valued independent identrically distributed random variables, independent of $$N_t$$.
+where the $$\{\ X_k , k \geq 1 \} is a collection of real-valued independent identically distributed random variables, independent of $$N_t$$.
 
 One can easily show using the law of total expectation, that:
 
