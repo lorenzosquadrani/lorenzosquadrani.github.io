@@ -7,9 +7,9 @@ sidebar: true
 ## Some definitions
 
 ### Stochastic Process
-Let $$(\Omega, \mathcal{F})$$ be a measurable space and $$I \subset \mathbb{R}$$ be an index set.
-We call stochastic process any sequence of random variables $$\{X_t\}_{t \in I}$$ on the same sample space $$\Omega$$.
-We denote a stochastic process as $$\{X_t\}_{t \in I}$$, or $$X: I \times \Omega \rightarrow \mathbb{R}$$, or simply $$X_t$$.
+Let $(\Omega, \mathcal{F})$ be a measurable space and $I \subset \mathbb{R}$ be an index set. 
+We call stochastic process any sequence of random variables on the same sample space $\Omega$.
+We denote a stochastic process as $\\{X_t\\}_{t \in I}$, or $X: I \times \Omega \rightarrow \mathbb{R}$, or simply $X_t$.
 
 If the index set is discrete, we call it a discrete-time stochastic process.
 If the index set is continuous, we call it a continuous-time stochastic process.
@@ -29,8 +29,8 @@ $$
 
 
 ### Filtration
-Let $$(\Omega, \mathcal{F})$$ be a measurable space and $$I \subset \mathbb{R}$$ be an index set.
-We call filtration any sequence of $$\sigma$$-algebras $$\{\mathcal{F}_t\}_{t \in I}$$, such that $$\mathcal{F}_s \subset \mathcal{F}_t$$ for any $$s \leq t$$.
+Let $(\Omega, \mathcal{F})$ be a measurable space and $I \subset \mathbb{R}$ be an index set.
+We call filtration any sequence of $\sigma$-algebras $$\{\mathcal{F}_t\}_{t \in I}$$, such that $$\mathcal{F}_s \subset \mathcal{F}_t$$ for any $$s \leq t$$.
 
 Note that any stochastic process induces a filtration, defined as $$\mathcal{F}_t = \sigma(X_s, s \leq t)$$, which is called the natural filtration of the $$\sigma$$-algebra $$\mathcal{F}$$ with respect to the stochastic process $$\{X_t\}_{t \in I}$$.
 
@@ -325,10 +325,10 @@ In the case in which $$t_1 > t_2$$, we have the expression with switched indexes
 
 ### Definition 1
 
-Let the function $$N(t_1, t_2)$$ be the number of events in the interval $$[t_1, t_2]$$.
-We say $$X(t)=N(0, t)$$ is a Poisson process if:
-- N(t_1, t_2) is a Poisson random variable with mean $$\lambda(t_2 - t_1)$$.
-- If the intervals $$[t_1, t_2]$$ and $$[t_3, t_4]$$ are disjoint, then $$N(t_1, t_2)$$ and $$N(t_3, t_4)$$ are independent.
+Let the function $N(t_1, t_2)$ be the number of events in the interval $[t_1, t_2]$.
+We say $X(t)=N(0, t)$ is a Poisson process if:
+- $N(t_1, t_2)$ is a Poisson random variable with mean $\lambda(t_2 - t_1)$.
+- If the intervals $[t_1, t_2]$ and $[t_3, t_4]$ are disjoint, then $N(t_1, t_2)$ and $N(t_3, t_4)$ are independent.
 
 But actually, an alternative definition might be useful.
 We can define a Poisson process as $$X(t)=N(t, t+\Delta t)$$ where $$\Delta t$$ is a fixed time interval.
