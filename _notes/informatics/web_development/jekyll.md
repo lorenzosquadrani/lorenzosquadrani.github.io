@@ -1,5 +1,6 @@
 ---
 title: "Jekyll"
+layout: note
 permalink: /notes/informatics/jekyll
 ---
 
@@ -58,6 +59,14 @@ Just use the `--user-install` flag to solve the problem.
 jekyll new /PATH/TO/FOLDER
 ```
 
+Use this command to build the website and host it at localhost:4000.
+Every time you change a file the website will be rebuilt.
+```
+jekyll serve
+```
+
+
+Use this command if you have gemfile:
 ``` 
 bundle exec jekyll serve
 ```
