@@ -89,23 +89,31 @@ where $$0=t_0 < t_1 < \ldots < t_n = t$$ is a partition of the interval $$[0, t]
 
 Note that the limit is defined in a probabilistic sense.
 
-### Stochastic Differential Equation
+## Stochastic Differential Equation
 
-Let $$(\Omega, \mathbb{F}, \mathbb{P})$$ be a probability space.
-Let $$X_t: [0, +\infty[ \times \Omega \longrightarrow \mathbb{R}$$ be a stochastic process.
-Let $$\mu: [0, +\infty[ \times \mathbb{R} \longrightarrow \mathbb{R}$$ and
-$$\sigma:  [0, +\infty[ \times \mathbb{R} \longrightarrow \mathbb{R}$$
+### Intuition
+
+Stochastic differential equations (SDEs) are a generalization of deterministic differential
+equations that incorporate a noise term.
+Ito's Calculus is the mathematics for handling such equations.sasa
+
+### Definition
+
+Let $(\Omega, \mathbb{F}, \mathbb{P})$ be a probability space.
+Let $X_t: [0, +\infty[ \times \Omega \longrightarrow \mathbb{R}$ be a stochastic process.
+Let $\mu: [0, +\infty[ \times \mathbb{R} \longrightarrow \mathbb{R}$ and
+$\sigma:  [0, +\infty[ \times \mathbb{R} \longrightarrow \mathbb{R}$
 be continuous functions.
-If $$X_t$$ satisfies the equation:
+If $X_t$ satisfies the equation:
 
 $$
 X_t = x_0 + \int_0^t \mu(s, X_s) ds + \int_0^t \sigma(s, X_s) dW_s
 $$
 
-then we say that $$X_t$$ is a strong solution of the stochastic differential equation denoted by:
+then we say that $X_t$ is a strong solution of the stochastic differential equation denoted by:
 
 $$
 dX_t = \mu(t, X_t) dt + \sigma(t, X_t) dW_t
 $$
 
-with initial initial condition $$X_0=x_0$$.
+with initial initial condition $X_0=x_0$.
