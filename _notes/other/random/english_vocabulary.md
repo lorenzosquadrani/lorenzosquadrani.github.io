@@ -38,8 +38,11 @@ title: "English Vocabulary"
 - [loo](https://www.wordreference.com/enit/loo)
 - [screed](https://www.wordreference.com/enit/screed)
 - [to tend](https://www.wordreference.com/enit/tended)
-- quandary
-- twat
+- [quandary](https://www.wordreference.com/enit/quandary)
+- [twat](https://www.wordreference.com/enit/twat)
+- [to churn out](https://www.wordreference.com/enit/churn%20out)
+- [chap](https://www.wordreference.com/enit/chap)
+- [steal](https://www.wordreference.com/enit/steal) (in the sense of moving silently)
 
 ### More elaborated expressions
 

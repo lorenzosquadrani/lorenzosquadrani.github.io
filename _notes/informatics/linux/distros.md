@@ -6,7 +6,7 @@ title: "Linux Distributions"
 ## Linux Mint
 
 Linux Mint is a linux distribution based on Ubuntu.
-The Linux Mint version installed and the Ubuntu version it is based on are stored in `/etc/os-release` and `etc/upstream/lsb-release`.
+The Linux Mint version installed and the Ubuntu version it is based on are stored in `/etc/os-release` and `etc/upstream-release/lsb-release`.
 
 ### Configuration steps:
 - Install Brave Browser

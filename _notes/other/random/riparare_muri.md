@@ -1,6 +1,6 @@
 ---
 layout: note
-title: "Microphones"
+title: "Riparare i muri"
 ---
 
 Lo stucco è un impasto a base di gesso, calce o cemento.
