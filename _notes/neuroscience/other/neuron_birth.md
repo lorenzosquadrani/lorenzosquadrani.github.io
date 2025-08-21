@@ -6,7 +6,6 @@
 The nervous system, including the brain, is made out of cells, which are divided in two categories: neurons and glia.
 
 
-
 All neurons have the same complement of genes, but they can express a restricted set and thus produce only certain molecules.
 For this reason, there are about 100 distrinct types of neurons.
 

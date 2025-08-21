@@ -4,7 +4,7 @@ title: Personal Notes
 permalink: /notes/
 ---
 
-<h1>Personal Notes</h1>
+<h1 style="text-align: center;">Personal Notes</h1>
 
 {% assign notes_by_field = site.notes | group_by_exp: "note", "note.path | split: '/' | slice: 1, 1 | join: '' " %}
 

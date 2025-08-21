@@ -2,6 +2,7 @@
 title: "Jekyll"
 layout: note
 permalink: /notes/informatics/jekyll
+sidebar: true
 ---
 
 ## What is Jekyll
@@ -17,7 +18,7 @@ For example in Linux Mint I use:
 ```
 sudo apt install ruby-full
 ```
-This command actually installs automatically a whole bunch of packages, in addition to `ruby`, which are: `onts-lato libgmp-dev libgmpxx4ldbl libruby libruby3.2 rake ri ruby ruby-dev ruby-net-telnet ruby-rubygems ruby-sdbm ruby-webrick ruby-xmlrpc ruby3.2 ruby3.2-dev ruby3.2-doc rubygems-integration`.
+This command actually installs automatically a whole bunch of packages, in addition to `ruby`.
 I am not sure whether they are all needed in order to properly run Jekyll, but for sure `ruby-rubygems` is needed.
 
 Addionally, you need to have GCC and Make.
@@ -47,7 +48,7 @@ export PATH="~/.local/share/gem/ruby/3.2.0/bin:$PATH"
 ```
 
 
-**Permission error** 
+### Troubleshooting
 If you get a permission error when you try to install a gem, it is probably because it is trying to install it in a folder with sudo privileges.
 Just use the `--user-install` flag to solve the problem.
 
@@ -71,17 +72,7 @@ Use this command if you have gemfile:
 bundle exec jekyll serve
 ```
 
-## Exploration
-
-
-
-The file `_config.yml` looks very important in the Academics template.
-Oh well, to organize my notes page, it seems like I have to read of Jekyll works for real. 
-I realized I am "killing" jekyll phylosophy. 
-It is like I am using a hammer to hit my target with the wooden handle.
-This is because every time a make some new content (write a new note), I have also to go the notes page and udpdate the table in order to add the note. 
-In Jekyll, this process should be all automated, so that you just focus on writing content, and the mental bargain of updating your website is way lower.
-
+## Minimal Website Structure
 
 To understand Jekyll, I hoped that reading the documentation on the website would have been enough.
 Unfortunately, it seems limited to the bare minimum. 
@@ -110,6 +101,53 @@ After I run the command `jekyll build` the following folders are created:
 - `.jekyll-cache`, which probably contains just some info used to speedup subsequent builds on the website
 - a folder `_site` containing a file `index.html` and a folder `assets/css`
 Importantly, this last folder is the website: just a collection of `.html` files, telling the browser what to draw, and `.css` files, telling the browser how to draw.
+
+## Sass - how to handle style
+
+Sass stands for Syntactically Awesome Style Sheets.
+It is a 'preprocessor' or an 'extension language' for CSS.
+The idea is that instead of writing your stylesheets directly in CSS (.css files), you write them in SCSS (.scss or .sass files), which are then automatically converted into .css files.
+The SCSS language adds features, like variables, to make the stylesheets more mantainable and powerful.
+
+The basic workflow when working with SCSS, is to make a set of .scss files containing styling options might be used on multiple pages.
+These files are called _partials_.
+Then, for each page that you need to style, you make .scss file in which you import all the partials needed.
+A file where partials are imported to is called a _manifest_ file.
+Depending on the way you want to structure your Sass project, a partial can contain all variables used in your project, functions or mixins or it might be for specific pages or components of your pages.
+
+Now, Jekyll uses Sass by default, as one can see by creating a blank website and looking at folders:
+- a folder `_sass` (partials folder) containing a single file `base.scss`
+- a folder `assets/css` containing a single file `main.scss`
+
+When you execute `jekyll build`, these files are use to build the files in `_site/assets/css`.
+This functionality is bundled with Jekyll through the [`jekyll-sass-converter`](https://github.com/jekyll/jekyll-sass-converter) plugin, which is enabled by default.
+Notice that the file `assets/css/main.scss` starts with the two lines (front matter):
+
+```
+---
+---
+```
+
+which tell Jekyll that this file needs to be processed, and not simply copied.
+
+The location of all the SCSS partials has to be specified in the `_config.ylm` file, by setting the value of `sass_dir`.
+By default, the value is `_sass`, and that is why the folder `_sass` was automatically created, with the partial `base.scss`.
+Files within this directory should not contain front matter, as they are intended for imports only.
+
+To be honest, the organization is Sass partials is a bit too much for a personal website, like mine. 
+At least, it feels so at the moment.
+I am not sure whether I want to keep it.
+
+
+## Exploration
+
+The file `_config.yml` looks very important in the Academics template.
+Oh well, to organize my notes page, it seems like I have to read of Jekyll works for real. 
+I realized I am "killing" jekyll phylosophy. 
+It is like I am using a hammer to hit my target with the wooden handle.
+This is because every time a make some new content (write a new note), I have also to go the notes page and udpdate the table in order to add the note. 
+In Jekyll, this process should be all automated, so that you just focus on writing content, and the mental bargain of updating your website is way lower.
+
 
 Now the first thing I want to do is to add some text, describing myself, in the `index.md` page, and also a picture.
 To do that, I try to follow the organization from [academicpages](https://github.com/academicpages/academicpages.github.io) and/or [al-folio](https://github.com/alshedivat/al-folio) (from now on called "the guys").

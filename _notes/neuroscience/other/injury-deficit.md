@@ -26,3 +26,18 @@ He could not form new long-term memories after the surgery.
 The long-term memories he had before were intact.
 
 Similar but milder effects were observed in R.B., which had only a destruction of pyrmadial cells in the CA1 region of the hippocampus.
+
+### Enthorinal Cortex (EC)
+
+The EC has many projections, one of which is to the hippocampal dentate gyrus (DG) via the so called perforant path (PP).
+PP axons can be divided in two distinct bundles, based on the area they origin: the medial PP starts from the medial EC and lateral PP starts from the lateral EC.
+The two paths also innervates two different regions of the dentate gyrus.
+Noteworthy, they are not only are anatomically segregated but also deliver inputs of different nature.
+LPP transmits olfactory, auditory, and visual information while MPP conveys spatial information.
+
+The evidence for a differential contribution by the two pathways to learning and memory processes was reinforced by behavioral studies. In these studies, animals subjected to selective lesions in either MEC or LEC showed distinct types of behavioral impairment: MEC injury caused defects mainly in place learning paradigms, whereas LEC injury mainly in contextual learning ones (Burwell et al., 2004; Ferbinteanu et al., 1999; Hunsaker et al., 2007).
+
+
+### References
+
+- Di Castro, Maria Amalia, and Andrea Volterra. "Astrocyte control of the entorhinal cortex‐dentate gyrus circuit: Relevance to cognitive processing and impairment in pathology." Glia 70.8 (2022): 1536-1553.

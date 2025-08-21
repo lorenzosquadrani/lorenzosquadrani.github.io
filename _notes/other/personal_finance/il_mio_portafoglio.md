@@ -1,5 +1,4 @@
-
-Dunque dunque: e' il 2025, ho 27 anny e 50 mila euro in banca.
+Dunque dunque: e' il 2025, ho 27 anni e 50 mila euro in banca.
 Direi che il momento perfetto per cominciare un portafoglio d'investimento tutto a base di ETF.
 
 La cosa su cui si regge quest'idea degli investimenti, poco importa se parliamo di fondi passivi o attivi, e' che nel passato il mercato e' sempre cresciuto.

@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "About"
+title: "About Me"
 permalink: /
 ---
 
-## Lorenzo Squadrani
+<h1 style="text-align: center;">Lorenzo Squadrani</h1>
 
 <img src="/assets/images/profile.jpg" alt="Profile picture" 
      style="float: right; margin-left: 10px; margin-right: 50px; width: 200px; border-radius: 50%; border: 0px solid #0073e6;;">
